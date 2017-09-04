@@ -1,0 +1,14 @@
+{% extends 'BkstgCoreBundle::layout.html.twig' %}
+
+{% block main_menu %}{% endblock %}
+
+{% block content_wrapper %}
+  <div class="content-wrapper container-fluid">
+
+    <div class="content">
+      {% block content %}
+        {% block fos_user_content %}{% endblock %}
+      {% endblock %}
+    </div>
+  </div>
+{% endblock %}
