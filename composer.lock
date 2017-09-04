@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "5c472bc3efa007671d9563f3a1336bf6",
+    "content-hash": "acbed5a88df51af5a1a198ed12c9b772",
     "packages": [
         {
             "name": "behat/transliterator",
@@ -52,16 +52,16 @@
         },
         {
             "name": "bkstg/core-bundle",
-            "version": "dev-master",
+            "version": "1.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/bkstg/core-bundle.git",
-                "reference": "2ff9266deb9fca9290c93747b2439d492606de29"
+                "reference": "cc76784434f07fb2690615c63a88ec53a1d48b6a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bkstg/core-bundle/zipball/2ff9266deb9fca9290c93747b2439d492606de29",
-                "reference": "2ff9266deb9fca9290c93747b2439d492606de29",
+                "url": "https://api.github.com/repos/bkstg/core-bundle/zipball/cc76784434f07fb2690615c63a88ec53a1d48b6a",
+                "reference": "cc76784434f07fb2690615c63a88ec53a1d48b6a",
                 "shasum": ""
             },
             "require": {
@@ -94,20 +94,20 @@
                 }
             ],
             "description": "Provides the core backstage functionality and requirements.",
-            "time": "2017-09-04 00:40:38"
+            "time": "2017-09-04T02:37:22+00:00"
         },
         {
             "name": "bkstg/notice-board-bundle",
-            "version": "dev-master",
+            "version": "1.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/bkstg/notice-board-bundle.git",
-                "reference": "32eae197e8933b902b78aaef71934e2a69a0db21"
+                "reference": "99e1616d5d2e082776c2d24c44ed4391e2546a2d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bkstg/notice-board-bundle/zipball/32eae197e8933b902b78aaef71934e2a69a0db21",
-                "reference": "32eae197e8933b902b78aaef71934e2a69a0db21",
+                "url": "https://api.github.com/repos/bkstg/notice-board-bundle/zipball/99e1616d5d2e082776c2d24c44ed4391e2546a2d",
+                "reference": "99e1616d5d2e082776c2d24c44ed4391e2546a2d",
                 "shasum": ""
             },
             "require": {
@@ -136,11 +136,11 @@
                 }
             ],
             "description": "Provides the backstage notice board.",
-            "time": "2017-09-04 00:37:59"
+            "time": "2017-09-04T12:24:25+00:00"
         },
         {
             "name": "bkstg/resource-bundle",
-            "version": "dev-master",
+            "version": "1.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/bkstg/resource-bundle.git",
@@ -178,20 +178,20 @@
                 }
             ],
             "description": "Provides the backstage resources.",
-            "time": "2017-09-04 00:44:26"
+            "time": "2017-09-04T00:44:26+00:00"
         },
         {
             "name": "bkstg/schedule-bundle",
-            "version": "dev-master",
+            "version": "1.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/bkstg/schedule-bundle.git",
-                "reference": "f3dc1671801042de5e770337686d47244d2d0fbc"
+                "reference": "379b13c0dcc63b56ac650e4b222052853be39235"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bkstg/schedule-bundle/zipball/f3dc1671801042de5e770337686d47244d2d0fbc",
-                "reference": "f3dc1671801042de5e770337686d47244d2d0fbc",
+                "url": "https://api.github.com/repos/bkstg/schedule-bundle/zipball/379b13c0dcc63b56ac650e4b222052853be39235",
+                "reference": "379b13c0dcc63b56ac650e4b222052853be39235",
                 "shasum": ""
             },
             "require": {
@@ -220,7 +220,7 @@
                 }
             ],
             "description": "Provides the backstage schedule.",
-            "time": "2017-09-04 00:46:27"
+            "time": "2017-09-04T14:23:15+00:00"
         },
         {
             "name": "doctrine/annotations",
@@ -3003,12 +3003,7 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {
-        "bkstg/core-bundle": 20,
-        "bkstg/notice-board-bundle": 20,
-        "bkstg/resource-bundle": 20,
-        "bkstg/schedule-bundle": 20
-    },
+    "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
