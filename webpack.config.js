@@ -1,5 +1,6 @@
 // webpack.config.js
 var Encore = require('@symfony/webpack-encore');
+var webpack = require('webpack');
 
 Encore
     .setOutputPath('web/build/')
@@ -7,6 +8,7 @@ Encore
     .cleanupOutputBeforeBuild()
     .addEntry('main', './app/Resources/assets/js/main.js')
     .addStyleEntry('global', './app/Resources/assets/css/global.scss')
+    .addPlugin(new webpack.ProvidePlugin({ Popper: 'popper.js' }))
     .enableSassLoader()
     .autoProvidejQuery()
     .enableSourceMaps(!Encore.isProduction())
