@@ -8,7 +8,7 @@ Encore
     .cleanupOutputBeforeBuild()
     .addEntry('main', './app/Resources/assets/js/main.js')
     .addStyleEntry('global', './app/Resources/assets/css/global.scss')
-    .addPlugin(new webpack.ProvidePlugin({ Popper: 'popper.js' }))
+    .addPlugin(new webpack.ProvidePlugin({ Popper: ['popper.js', 'default'] }))
     .enableSassLoader()
     .autoProvidejQuery()
     .enableSourceMaps(!Encore.isProduction())
