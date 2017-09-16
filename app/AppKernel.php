@@ -19,6 +19,7 @@ class AppKernel extends Kernel
             // Contrib bundles.
             new FOS\UserBundle\FOSUserBundle(),
             new Ivory\CKEditorBundle\IvoryCKEditorBundle(),
+            new Knp\Bundle\MenuBundle\KnpMenuBundle(),
 
             // Application bundles.
             new Bkstg\CoreBundle\BkstgCoreBundle(),
