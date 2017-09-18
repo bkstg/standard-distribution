@@ -1,2 +1,11 @@
 @import '~bootstrap/scss/bootstrap';
 @import '~font-awesome/scss/font-awesome';
+
+.sidebar-menu {
+  .list-group {
+    width: 100%;
+    a {
+      border-radius: 0;
+    }
+  }
+}
