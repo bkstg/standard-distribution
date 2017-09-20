@@ -19,3 +19,4 @@
 /src/*
 !src/.htaccess
 /web/build/
+/web/uploads/
