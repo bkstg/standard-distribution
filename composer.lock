@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "77fb06b8e4bc6d298372f485d8f6cc73",
+    "content-hash": "823d1d9b316f9466158720dee0b41bc3",
     "packages": [
         {
             "name": "behat/transliterator",
@@ -1944,6 +1944,59 @@
             "time": "2017-08-19T09:43:47+00:00"
         },
         {
+            "name": "midnightluke/php-units-of-measure-bundle",
+            "version": "1.0.0-alpha2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/midnightLuke/php-units-of-measure-bundle.git",
+                "reference": "0713c3445213b52c4ef00a5756074333b1cb1f78"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/midnightLuke/php-units-of-measure-bundle/zipball/0713c3445213b52c4ef00a5756074333b1cb1f78",
+                "reference": "0713c3445213b52c4ef00a5756074333b1cb1f78",
+                "shasum": ""
+            },
+            "require": {
+                "doctrine/dbal": "^2.5",
+                "php": "^5.5.9 || ^7.0",
+                "php-units-of-measure/php-units-of-measure": "^2.1",
+                "symfony/form": "^2.7 || ^3.0",
+                "symfony/framework-bundle": "^2.7 || ^3.0"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "^2.3",
+                "phpunit/phpunit": "^5.7",
+                "satooshi/php-coveralls": "^1.0"
+            },
+            "type": "symfony-bundle",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "MidnightLuke\\PhpUnitsOfMeasureBundle\\": ""
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Luke Bainbridge",
+                    "email": "luke.bainbridge@gmail.com"
+                }
+            ],
+            "description": "Symfony bundle wrapper for the PHP Units of Measure library with useful doctrine and form types.",
+            "time": "2017-06-14T01:05:48+00:00"
+        },
+        {
             "name": "monolog/monolog",
             "version": "1.23.0",
             "source": {
@@ -2068,6 +2121,57 @@
                 "random"
             ],
             "time": "2017-03-13T16:27:32+00:00"
+        },
+        {
+            "name": "php-units-of-measure/php-units-of-measure",
+            "version": "v2.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/PhpUnitsOfMeasure/php-units-of-measure.git",
+                "reference": "25f476e9c50e11af8cf044d22ffc271c96aa5248"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/PhpUnitsOfMeasure/php-units-of-measure/zipball/25f476e9c50e11af8cf044d22ffc271c96aa5248",
+                "reference": "25f476e9c50e11af8cf044d22ffc271c96aa5248",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4.0"
+            },
+            "replace": {
+                "triplepoint/php-units-of-measure": "*"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "4.8.*",
+                "squizlabs/php_codesniffer": "2.2.*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "PhpUnitsOfMeasure\\": "source/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jonathan Hanson",
+                    "email": "jonathan@jonathan-hanson.org",
+                    "homepage": "http://www.jonathan-hanson.org/",
+                    "role": "Developer"
+                }
+            ],
+            "description": "A PHP library for converting between standard units of measure.",
+            "homepage": "https://github.com/PhpUnitsOfMeasure/php-units-of-measure",
+            "keywords": [
+                "conversion",
+                "data",
+                "measurements"
+            ],
+            "time": "2016-07-24T22:36:00+00:00"
         },
         {
             "name": "phpcollection/phpcollection",
@@ -4199,7 +4303,9 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "midnightluke/php-units-of-measure-bundle": 15
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
