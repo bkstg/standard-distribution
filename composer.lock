@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "823d1d9b316f9466158720dee0b41bc3",
+    "content-hash": "7ee43f55847eb1a558623b8d64664f68",
     "packages": [
         {
             "name": "behat/transliterator",
@@ -1945,16 +1945,16 @@
         },
         {
             "name": "midnightluke/php-units-of-measure-bundle",
-            "version": "1.0.0-alpha2",
+            "version": "1.0.0-alpha3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/midnightLuke/php-units-of-measure-bundle.git",
-                "reference": "0713c3445213b52c4ef00a5756074333b1cb1f78"
+                "reference": "0a9c6fa7efcf9824354f5e33321b401f02c002a3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/midnightLuke/php-units-of-measure-bundle/zipball/0713c3445213b52c4ef00a5756074333b1cb1f78",
-                "reference": "0713c3445213b52c4ef00a5756074333b1cb1f78",
+                "url": "https://api.github.com/repos/midnightLuke/php-units-of-measure-bundle/zipball/0a9c6fa7efcf9824354f5e33321b401f02c002a3",
+                "reference": "0a9c6fa7efcf9824354f5e33321b401f02c002a3",
                 "shasum": ""
             },
             "require": {
@@ -1994,7 +1994,7 @@
                 }
             ],
             "description": "Symfony bundle wrapper for the PHP Units of Measure library with useful doctrine and form types.",
-            "time": "2017-06-14T01:05:48+00:00"
+            "time": "2017-09-23T16:13:12+00:00"
         },
         {
             "name": "monolog/monolog",

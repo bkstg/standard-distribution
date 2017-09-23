@@ -22,7 +22,7 @@
         "gedmo/doctrine-extensions": "^2.4",
         "incenteev/composer-parameter-handler": "^2.0",
         "knplabs/knp-menu-bundle": "^2.1",
-        "midnightluke/php-units-of-measure-bundle": "1.0.0-alpha2",
+        "midnightluke/php-units-of-measure-bundle": "^1.0.0-alpha3",
         "sensio/distribution-bundle": "^5.0",
         "sensio/framework-extra-bundle": "^3.0",
         "sonata-project/block-bundle": "^3.3",

@@ -58,6 +58,8 @@ doctrine:
         #path: '%database_path%'
         types:
             json: Sonata\Doctrine\Types\JsonType
+            length: MidnightLuke\PhpUnitsOfMeasureBundle\Doctrine\Types\LengthType
+            mass: MidnightLuke\PhpUnitsOfMeasureBundle\Doctrine\Types\MassType
 
     orm:
         auto_generate_proxy_classes: '%kernel.debug%'
