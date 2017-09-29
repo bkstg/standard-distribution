@@ -30,6 +30,8 @@ class AppKernel extends Kernel
             // Application bundles.
             new Bkstg\CoreBundle\BkstgCoreBundle(),
             new Bkstg\MediaBundle\BkstgMediaBundle(),
+            new MidnightLuke\GroupSecurityBundle\MidnightLukeGroupSecurityBundle(),
+            new Bkstg\FOSUserBundle\BkstgFOSUserBundle(),
         ];
 
         if (in_array($this->getEnvironment(), ['dev', 'test'], true)) {
