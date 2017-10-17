@@ -93,7 +93,7 @@ sonata_block:
         #sonata.admin_doctrine_orm.block.audit:
         #    contexts:   [admin]
 
-        Bkstg\CoreBundle\Block\ProductionMembershipsBlock: ~
+        Bkstg\NoticeBoardBundle\Block\PostFormBlock: ~
         # sonata.block.service.text: ~
         # sonata.block.service.rss:
 

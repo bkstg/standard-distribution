@@ -1,4 +1,7 @@
-media:
+bkstg_notice_board:
+    resource: "@BkstgNoticeBoardBundle/Resources/config/routing/all.yml"
+    prefix:   /{production_slug}/board
+bkstg_media:
     resource: '@SonataMediaBundle/Resources/config/routing/media.xml'
     prefix: /media
 bkstg_fos_user:
