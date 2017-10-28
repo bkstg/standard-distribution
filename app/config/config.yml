@@ -139,3 +139,8 @@ sonata_media:
         local:
             directory: "%kernel.root_dir%/../web/uploads/media"
             create: true
+
+knp_paginator:
+    template:
+        pagination: 'KnpPaginatorBundle:Pagination:twitter_bootstrap_v4_pagination.html.twig'
+        sortable: 'BkstgCoreBundle:Partials:sortable-link.html.twig'
