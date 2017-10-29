@@ -65,6 +65,8 @@ doctrine:
         auto_generate_proxy_classes: '%kernel.debug%'
         naming_strategy: doctrine.orm.naming_strategy.underscore
         auto_mapping: true
+        second_level_cache:
+            enabled: true
 
 # Swiftmailer Configuration
 swiftmailer:
@@ -144,3 +146,12 @@ knp_paginator:
     template:
         pagination: 'KnpPaginatorBundle:Pagination:twitter_bootstrap_v4_pagination.html.twig'
         sortable: 'BkstgCoreBundle:Partials:sortable-link.html.twig'
+
+sonata_notification:
+    backend: sonata.notification.backend.doctrine
+    backends:
+        doctrine: ~
+    admin:
+        enabled: false
+    class:
+        message: Bkstg\NotificationBundle\Entity\Message

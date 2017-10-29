@@ -21,19 +21,21 @@ class AppKernel extends Kernel
             new Ivory\CKEditorBundle\IvoryCKEditorBundle(),
             new JMS\SerializerBundle\JMSSerializerBundle(),
             new Knp\Bundle\MenuBundle\KnpMenuBundle(),
+            new Knp\Bundle\PaginatorBundle\KnpPaginatorBundle(),
+            new MidnightLuke\GroupSecurityBundle\MidnightLukeGroupSecurityBundle(),
             new MidnightLuke\PhpUnitsOfMeasureBundle\MidnightLukePhpUnitsOfMeasureBundle(),
-            new Sonata\CoreBundle\SonataCoreBundle(),
             new Sonata\BlockBundle\SonataBlockBundle(),
+            new Sonata\CoreBundle\SonataCoreBundle(),
             new Sonata\EasyExtendsBundle\SonataEasyExtendsBundle(),
             new Sonata\MediaBundle\SonataMediaBundle(),
-            new Knp\Bundle\PaginatorBundle\KnpPaginatorBundle(),
+            new Sonata\NotificationBundle\SonataNotificationBundle(),
 
             // Application bundles.
             new Bkstg\CoreBundle\BkstgCoreBundle(),
-            new Bkstg\MediaBundle\BkstgMediaBundle(),
-            new MidnightLuke\GroupSecurityBundle\MidnightLukeGroupSecurityBundle(),
             new Bkstg\FOSUserBundle\BkstgFOSUserBundle(),
+            new Bkstg\MediaBundle\BkstgMediaBundle(),
             new Bkstg\NoticeBoardBundle\BkstgNoticeBoardBundle(),
+            new Bkstg\NotificationBundle\BkstgNotificationBundle(),
         ];
 
         if (in_array($this->getEnvironment(), ['dev', 'test'], true)) {
