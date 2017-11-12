@@ -31,7 +31,6 @@ framework:
         save_path: '%kernel.project_dir%/var/sessions/%kernel.environment%'
     fragments: ~
     http_method_override: true
-    assets: ~
     php_errors:
         log: true
 
@@ -111,35 +110,34 @@ sonata_block:
         #       - { name: 'Big',    template: 'AcmeDemoBundle:Block:demo_big.html.twig' }
 
 sonata_media:
-    # if you don't use default namespace configuration
+    default_context: default
+    db_driver: doctrine_orm
     class:
         media: Bkstg\MediaBundle\Entity\Media
         gallery: Bkstg\MediaBundle\Entity\Gallery
         gallery_has_media: Bkstg\MediaBundle\Entity\GalleryHasMedia
-    db_driver: doctrine_orm
-    default_context: default
+    providers:
+        image:
+            resizer: sonata.media.resizer.square
     contexts:
         default:
             download:
-                strategy: sonata.media.security.forbidden_strategy
+                strategy: sonata.media.security.connected_strategy
                 mode: http
             providers:
                 - sonata.media.provider.youtube
                 - sonata.media.provider.image
                 - sonata.media.provider.file
                 - sonata.media.provider.vimeo
-
             formats:
-                small: { width: 256 , quality: 70}
-                big:   { width: 512 , quality: 70}
-
+                square: { width: 256, height: 256, quality: 90}
+                small: { width: 256 , quality: 90}
+                big:   { width: 512 , quality: 90}
     cdn:
-        server:
-            path: /uploads/media
-
+        server: ~
     filesystem:
         local:
-            directory: "%kernel.root_dir%/../web/uploads/media"
+            directory: "%kernel.root_dir%/../var/uploads/media"
             create: true
 
 knp_paginator:
