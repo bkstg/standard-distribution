@@ -29,6 +29,8 @@ class AppKernel extends Kernel
             new Sonata\EasyExtendsBundle\SonataEasyExtendsBundle(),
             new Sonata\MediaBundle\SonataMediaBundle(),
             new Sonata\NotificationBundle\SonataNotificationBundle(),
+            new Spy\TimelineBundle\SpyTimelineBundle(),
+            new Liip\MonitorBundle\LiipMonitorBundle(),
 
             // Application bundles.
             new Bkstg\CoreBundle\BkstgCoreBundle(),

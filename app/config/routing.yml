@@ -1,3 +1,6 @@
+bkstg_notification:
+    resource: "@BkstgNotificationBundle/Resources/config/routing/all.yml"
+    prefix:   /notification
 bkstg_notice_board:
     resource: "@BkstgNoticeBoardBundle/Resources/config/routing/all.yml"
     prefix:   /{production_slug}/board
@@ -9,3 +12,6 @@ bkstg_fos_user:
     prefix:   /
 bktsg_core:
     resource: '@BkstgCoreBundle/Resources/config/routing/all.yml'
+_monitor:
+    resource: "@LiipMonitorBundle/Resources/config/routing.xml"
+    prefix: /admin/monitor/health

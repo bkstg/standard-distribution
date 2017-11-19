@@ -95,6 +95,7 @@ sonata_block:
         #    contexts:   [admin]
 
         Bkstg\NoticeBoardBundle\Block\PostFormBlock: ~
+        Bkstg\NotificationBundle\Block\NotificationsBlock: ~
         # sonata.block.service.text: ~
         # sonata.block.service.rss:
 
@@ -153,3 +154,29 @@ sonata_notification:
         enabled: false
     class:
         message: Bkstg\NotificationBundle\Entity\Message
+
+spy_timeline:
+    drivers:
+        orm:
+            object_manager: doctrine.orm.entity_manager
+            classes:
+                query_builder: ~
+                timeline:  Bkstg\NotificationBundle\Entity\Timeline
+                action:    Bkstg\NotificationBundle\Entity\Action
+                component: Bkstg\NotificationBundle\Entity\Component
+                action_component: Bkstg\NotificationBundle\Entity\ActionComponent
+            post_load_listener: true
+    notifiers:
+        - Bkstg\NotificationBundle\Notifier\UnreadNotificationManager
+    render:
+        path:     'BkstgNotificationBundle:Timeline'
+        fallback: 'BkstgNotificationBundle:Timeline:default.html.twig'
+        i18n:
+            fallback: en
+    resolve_component:
+            resolver: spy_timeline.resolve_component.doctrine
+
+liip_monitor:
+    enable_controller: true
+    checks:
+        php_extensions: [apc, xdebug]
