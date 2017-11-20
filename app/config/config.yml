@@ -156,6 +156,12 @@ sonata_notification:
         message: Bkstg\NotificationBundle\Entity\Message
 
 spy_timeline:
+    filters:
+        data_hydrator:
+            priority: 20
+            service: spy_timeline.filter.data_hydrator
+            locators:
+                - spy_timeline.filter.data_hydrator.locator.doctrine_orm
     drivers:
         orm:
             object_manager: doctrine.orm.entity_manager
@@ -165,7 +171,6 @@ spy_timeline:
                 action:    Bkstg\NotificationBundle\Entity\Action
                 component: Bkstg\NotificationBundle\Entity\Component
                 action_component: Bkstg\NotificationBundle\Entity\ActionComponent
-            post_load_listener: true
     notifiers:
         - Bkstg\NotificationBundle\Notifier\UnreadNotificationManager
     render:
@@ -173,8 +178,11 @@ spy_timeline:
         fallback: 'BkstgNotificationBundle:Timeline:default.html.twig'
         i18n:
             fallback: en
+        resources:
+            - 'BkstgNotificationBundle:Timeline:components.html.twig'
     resolve_component:
-            resolver: spy_timeline.resolve_component.doctrine
+        resolver: spy_timeline.resolve_component.doctrine
+    paginator: spy_timeline.paginator.knp
 
 liip_monitor:
     enable_controller: true
