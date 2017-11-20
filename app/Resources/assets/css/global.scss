@@ -1,6 +1,14 @@
 @import '~bootstrap/scss/bootstrap';
 @import '~font-awesome/scss/font-awesome';
 
+.post {
+  padding-top: 4em;
+  margin-top: -4em;
+  &:target .row {
+    background-color: lighten(#343a40, 75%);
+  }
+}
+
 .sidebar-menu {
   .list-group {
     .active {
