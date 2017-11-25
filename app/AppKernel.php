@@ -31,6 +31,7 @@ class AppKernel extends Kernel
             new Sonata\NotificationBundle\SonataNotificationBundle(),
             new Spy\TimelineBundle\SpyTimelineBundle(),
             new Liip\MonitorBundle\LiipMonitorBundle(),
+            new Nelmio\SolariumBundle\NelmioSolariumBundle(),
 
             // Application bundles.
             new Bkstg\CoreBundle\BkstgCoreBundle(),
@@ -38,6 +39,7 @@ class AppKernel extends Kernel
             new Bkstg\MediaBundle\BkstgMediaBundle(),
             new Bkstg\NoticeBoardBundle\BkstgNoticeBoardBundle(),
             new Bkstg\NotificationBundle\BkstgNotificationBundle(),
+            new Bkstg\SolariumSearchBundle\BkstgSolariumSearchBundle(),
         ];
 
         if (in_array($this->getEnvironment(), ['dev', 'test'], true)) {

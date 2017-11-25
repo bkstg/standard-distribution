@@ -1,3 +1,7 @@
+bkstg_solarium_search:
+    resource: "@BkstgSolariumSearchBundle/Resources/config/routing.yml"
+    prefix:   /
+
 bkstg_notification:
     resource: "@BkstgNotificationBundle/Resources/config/routing/all.yml"
     prefix:   /notification
