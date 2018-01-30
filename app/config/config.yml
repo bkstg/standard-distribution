@@ -171,12 +171,22 @@ liip_monitor:
     checks:
         php_extensions: [apc, xdebug]
 
-nelmio_solarium:
-    endpoints:
-        default:
-            scheme: http
-            host: localhost
-            port: 8983
-            path: /solr/bkstg_net
-            core: active
-            timeout: 5
+fos_elastica:
+    clients:
+        default: { host: localhost, port: 9200 }
+    serializer:
+        serializer: jms_serializer
+    indexes:
+        app:
+            finder: ~
+            index_name: app_%kernel.environment%
+            types:
+                user:
+                    persistence:
+                        model: Bkstg\FOSUserBundle\Entity\User
+                production:
+                    persistence:
+                        model: Bkstg\CoreBundle\Entity\Production
+                post:
+                    persistence:
+                        model: Bkstg\NoticeBoardBundle\Entity\Post
