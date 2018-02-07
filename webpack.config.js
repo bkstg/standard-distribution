@@ -1,6 +1,7 @@
 // webpack.config.js
 var Encore = require('@symfony/webpack-encore');
 var webpack = require('webpack');
+var LiveReloadPlugin = require('webpack-livereload-plugin');
 
 Encore
     .setOutputPath('web/build/')
@@ -16,4 +17,6 @@ Encore
 ;
 
 // export the final configuration
-module.exports = Encore.getWebpackConfig();
+config = Encore.getWebpackConfig();
+config.plugins.push(new LiveReloadPlugin());
+module.exports = config;
