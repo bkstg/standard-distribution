@@ -7,6 +7,9 @@ bkstg_notification:
 bkstg_notice_board:
     resource: "@BkstgNoticeBoardBundle/Resources/config/routing/all.yml"
     prefix:   /{production_slug}/board
+bkstg_schedule:
+    resource: "@BkstgScheduleBundle/Resources/config/routing/all.yml"
+    prefix:   /{production_slug}/schedule
 bkstg_media:
     resource: "@BkstgMediaBundle/Resources/config/routing/all.yml"
     prefix: /media

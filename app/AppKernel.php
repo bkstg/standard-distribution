@@ -40,6 +40,7 @@ class AppKernel extends Kernel
             new Bkstg\NoticeBoardBundle\BkstgNoticeBoardBundle(),
             new Bkstg\NotificationBundle\BkstgNotificationBundle(),
             new Bkstg\SearchBundle\BkstgSearchBundle(),
+            new Bkstg\ScheduleBundle\BkstgScheduleBundle(),
         ];
 
         if (in_array($this->getEnvironment(), ['dev', 'test'], true)) {

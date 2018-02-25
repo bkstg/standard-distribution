@@ -60,3 +60,21 @@ ul.pagination {
     color: $white;
   }
 }
+
+ul.search-results {
+  list-style-type: none;
+  padding-left: 0;
+  .breadcrumb {
+    font-size: .85em;
+    padding: .5em;
+    background-color: lighten($gray-800, 75%);
+  }
+  .search-result {
+    margin: 1em 0;
+    padding: 1em;
+    border-left: solid 4px $gray-800;
+    &:hover {
+      background-color: lighten($gray-800, 75%);
+    }
+  }
+}

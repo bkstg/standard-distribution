@@ -1,0 +1,1 @@
+<img src="{{ path('bkstg_media_serve', {'id': media.id, 'format': format}) }}" {% for name, value in options %}{% if name not in ['src', 'srcset', 'sizes'] %}{{ name }}="{{ value }}" {% endif %}{% endfor %}/>
