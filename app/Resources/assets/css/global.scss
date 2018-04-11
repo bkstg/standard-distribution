@@ -1,5 +1,6 @@
 @import '~bootstrap/scss/bootstrap';
 @import '~font-awesome/scss/font-awesome';
+@import '~bootstrap-calendar/css/calendar.css';
 
 .post {
   padding-top: 1em;
@@ -37,6 +38,7 @@ ul.pagination {
 
 .sidebar-menu {
   .list-group {
+    z-index: 0;
     .active {
       border: none;
       background-color: darken($gray-800, 10%) !important;
