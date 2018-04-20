@@ -15,7 +15,7 @@
     "webpack-livereload-plugin": "^1.0.0"
   },
   "dependencies": {
-    "bootstrap": "4.0.0-beta",
+    "bootstrap": "^4.0.0",
     "bootstrap-calendar": "^0.2.4",
     "font-awesome": "^4.7.0",
     "jquery": "^3.2.1",

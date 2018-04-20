@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ app.request.locale|default('en') }}">
+<html lang="{{ app.request.locale|default('en') }}"{% for attr,val in html_attr|default([]) %} {{attr}}="{{val}}"{% endfor %}>
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -10,7 +10,7 @@
 
     <title>{{ page_title|default('') }} | The Backstage</title>
   </head>
-  <body>
+  <body{% for attr,val in body_attr|default([]) %} {{attr}}="{{val}}"{% endfor %}>
     {% block body %}{% endblock %}
     {% block javascripts %}
         <script src="{{ asset('build/main.js') }}"></script>

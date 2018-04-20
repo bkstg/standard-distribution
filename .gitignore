@@ -15,8 +15,6 @@
 !var/SymfonyRequirements.php
 /vendor/
 /web/bundles/
-!/src
-/src/*
-!src/.htaccess
+/src-dev/*
 /web/build/
 /web/uploads/

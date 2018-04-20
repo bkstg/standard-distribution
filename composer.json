@@ -5,7 +5,8 @@
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "": "src"
+            "": "src",
+            "Bkstg\\": "src-dev/Bkstg/"
         },
         "classmap": [ "app/AppKernel.php", "app/AppCache.php" ]
     },
