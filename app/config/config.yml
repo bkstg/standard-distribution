@@ -163,7 +163,7 @@ spy_timeline:
     notifiers:
         - Bkstg\NotificationBundle\Notifier\UnreadNotificationManager
     render:
-        path:     'BkstgNotificationBundle:Timeline'
+        path:     ':Timeline'
         fallback: 'BkstgNotificationBundle:Timeline:default.html.twig'
         resources:
             - 'BkstgNotificationBundle:Timeline:components.html.twig'
