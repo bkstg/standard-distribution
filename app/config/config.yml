@@ -165,8 +165,6 @@ spy_timeline:
     render:
         path:     'BkstgNotificationBundle:Timeline'
         fallback: 'BkstgNotificationBundle:Timeline:default.html.twig'
-        i18n:
-            fallback: en
         resources:
             - 'BkstgNotificationBundle:Timeline:components.html.twig'
     resolve_component:
