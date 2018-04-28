@@ -8,11 +8,10 @@ Encore
     // Create output paths and main entry points.
     .setOutputPath('web/build/')
     .setPublicPath('/build')
-    .addEntry('main', './app/Resources/assets/js/main.js')
-    .addStyleEntry('global', './app/Resources/assets/css/global.scss')
+    .addEntry('js/app', './app/Resources/assets/js/app.js')
+    .addStyleEntry('css/app', './app/Resources/assets/css/app.scss')
 
-    // Schedule configuration.
-    .addEntry('calendar', './app/Resources/assets/js/calendar.js')
+    // Schedule template configuration.
     .addPlugin(new CopyWebpackPlugin([
         { from: './node_modules/bootstrap-calendar', to: 'components/bootstrap-calendar' },
     ]))
