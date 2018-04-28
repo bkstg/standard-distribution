@@ -18,3 +18,4 @@
 /src-dev/*
 /web/build/
 /web/uploads/
+yarn-error.log
