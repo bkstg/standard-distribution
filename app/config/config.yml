@@ -40,6 +40,7 @@ twig:
     strict_variables: '%kernel.debug%'
     form_theme:
         - 'bootstrap_4_layout.html.twig'
+        - '::Form/collection.html.twig'
 
 # Doctrine Configuration
 doctrine:
