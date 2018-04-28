@@ -38,9 +38,9 @@ class AppKernel extends Kernel
             new Bkstg\FOSUserBundle\BkstgFOSUserBundle(),
             new Bkstg\MediaBundle\BkstgMediaBundle(),
             new Bkstg\NoticeBoardBundle\BkstgNoticeBoardBundle(),
-            new Bkstg\NotificationBundle\BkstgNotificationBundle(),
             new Bkstg\SearchBundle\BkstgSearchBundle(),
             new Bkstg\ScheduleBundle\BkstgScheduleBundle(),
+            new Bkstg\TimelineBundle\BkstgTimelineBundle(),
         ];
 
         if (in_array($this->getEnvironment(), ['dev', 'test'], true)) {

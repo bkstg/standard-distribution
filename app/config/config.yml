@@ -97,7 +97,7 @@ sonata_block:
     blocks:
         Bkstg\NoticeBoardBundle\Block\PostFormBlock: ~
         Bkstg\NoticeBoardBundle\Block\ReplyFormBlock: ~
-        Bkstg\NotificationBundle\Block\NotificationsBlock: ~
+        Bkstg\TimelineBundle\Block\NotificationsBlock: ~
 
 sonata_media:
     default_context: default
@@ -135,15 +135,6 @@ knp_paginator:
         pagination: 'KnpPaginatorBundle:Pagination:twitter_bootstrap_v4_pagination.html.twig'
         sortable: 'BkstgCoreBundle:Partials:sortable-link.html.twig'
 
-sonata_notification:
-    backend: sonata.notification.backend.doctrine
-    backends:
-        doctrine: ~
-    admin:
-        enabled: false
-    class:
-        message: Bkstg\NotificationBundle\Entity\Message
-
 spy_timeline:
     filters:
         data_hydrator:
@@ -156,17 +147,17 @@ spy_timeline:
             object_manager: doctrine.orm.entity_manager
             classes:
                 query_builder: ~
-                timeline:  Bkstg\NotificationBundle\Entity\Timeline
-                action:    Bkstg\NotificationBundle\Entity\Action
-                component: Bkstg\NotificationBundle\Entity\Component
-                action_component: Bkstg\NotificationBundle\Entity\ActionComponent
+                timeline:  Bkstg\TimelineBundle\Entity\Timeline
+                action:    Bkstg\TimelineBundle\Entity\Action
+                component: Bkstg\TimelineBundle\Entity\Component
+                action_component: Bkstg\TimelineBundle\Entity\ActionComponent
     notifiers:
-        - Bkstg\NotificationBundle\Notifier\UnreadNotificationManager
+        - Bkstg\TimelineBundle\Notifier\UnreadNotificationManager
     render:
         path:     ':Timeline'
-        fallback: 'BkstgNotificationBundle:Timeline:default.html.twig'
+        fallback: 'BkstgTimelineBundle:Timeline:default.html.twig'
         resources:
-            - 'BkstgNotificationBundle:Timeline:components.html.twig'
+            - 'BkstgTimelineBundle:Timeline:components.html.twig'
     resolve_component:
         resolver: spy_timeline.resolve_component.doctrine
     paginator: spy_timeline.paginator.knp
