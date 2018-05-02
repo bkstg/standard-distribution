@@ -1,0 +1,25 @@
+version: '3'
+services:
+    elasticsearch:
+        image: elasticsearch:2
+    mariadb:
+        image: mariadb:latest
+        environment:
+            MYSQL_ROOT_PASSWORD: root
+            MYSQL_DATABASE: bkstg_net
+            MYSQL_USER: bkstg_net
+            MYSQL_PASSWORD: password
+    php:
+        working_dir: /var/www/bkstg_net
+        build:
+            context: ./.docker/php
+        volumes:
+            - .:/var/www/bkstg_net
+    nginx:
+        working_dir: /var/www/bkstg_net
+        image: nginx:latest
+        ports:
+            - "8080:80"
+        volumes:
+            - .:/var/www/bkstg_net
+            - ./.docker/nginx/site.conf:/etc/nginx/conf.d/default.conf
