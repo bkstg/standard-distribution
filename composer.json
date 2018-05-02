@@ -28,7 +28,7 @@
         "knplabs/knp-paginator-bundle": "^2.6",
         "liip/monitor-bundle": "^2.5",
         "midnightluke/group-security-bundle": "^1.0.0-alpha1",
-        "midnightluke/php-units-of-measure-bundle": "^1.0.0-alpha3",
+        "midnightluke/php-units-of-measure-bundle": "^1.0.0-alpha4",
         "sensio/distribution-bundle": "^5.0",
         "sensio/framework-extra-bundle": "^3.0",
         "sonata-project/block-bundle": "^3.3",
