@@ -25,7 +25,7 @@ Globals.behaviours.collection_item_add = function() {
 
       // Create new collection item form and add.
       var new_li = $('<li class="list-group-item collection-item"></li>').append(form);
-      $(collection_holder).find('.collection-items').append(new_li);
+      $(collection_holder).children('.collection-items').append(new_li);
 
       // Reattach behaviours.
       Globals.attach();
