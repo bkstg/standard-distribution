@@ -10,10 +10,9 @@ Globals.behaviours.calendar = function() {
   var path = window.location.pathname.split("/");
 
   $('#calendar').once().each(function() {
-    var events_source = $(this).data('app-url') + '/' + $(this).data('production-slug') + '/schedule/event';
     var calendar = $(this).calendar({
       tmpl_path: "/build/components/bootstrap-calendar/tmpls/",
-      events_source: events_source,
+      events_source: $(this).data('search-url'),
       format12: true,
       view: 'week',
       onAfterViewLoad: function(view) {
