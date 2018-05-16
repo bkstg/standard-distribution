@@ -15,7 +15,7 @@
 {% endblock %}
 
 {% block collection_widget %}
-  <div class="form-collection" data-prototype="{{ form_row(prototype)|e('html') }}">
+  <div id="{{ form.vars.id }}" class="form-collection" data-prototype="{{ form_row(prototype)|e('html') }}">
     <ul class="list-group list-group-flush collection-items">
       {% for child in form.children %}
         <li class="list-group-item collection-item">{{ form_row(child) }}</li>

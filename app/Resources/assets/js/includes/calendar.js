@@ -12,8 +12,9 @@ Globals.behaviours.calendar = function() {
   $('#calendar').once().each(function() {
     var calendar = $(this).calendar({
       tmpl_path: "/build/components/bootstrap-calendar/tmpls/",
-      events_source: "/" + path[1] + "/schedule/event",
+      events_source: $(this).data('search-url'),
       format12: true,
+      view: 'week',
       onAfterViewLoad: function(view) {
         $('h3.date-display').text(this.getTitle());
         $('.btn-group button').removeClass('active');
@@ -33,7 +34,6 @@ Globals.behaviours.calendar = function() {
       $this.click(function() {
         calendar.view($this.data('calendar-view'));
       });
-  });
-
+    });
   });
 }

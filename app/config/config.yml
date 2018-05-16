@@ -36,6 +36,8 @@ framework:
 
 # Twig Configuration
 twig:
+    globals:
+        google_api_key: '%google_api_key%'
     debug: '%kernel.debug%'
     strict_variables: '%kernel.debug%'
     form_theme:
