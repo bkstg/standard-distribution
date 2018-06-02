@@ -1,12 +1,19 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <title>{% block title %}Welcome!{% endblock %}</title>
-        {% block stylesheets %}{% endblock %}
-    </head>
-    <body>
-        {% block body %}{% endblock %}
-        {% block javascripts %}{% endblock %}
-    </body>
+<html lang="{{ app.request.locale|default('en') }}"{% for attr,val in html_attr|default([]) %} {{attr}}="{{val}}"{% endfor %}>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    {% block stylesheets %}
+        <link rel="stylesheet" href="{{ asset('build/css/app.css') }}">
+    {% endblock %}
+
+    <title>{{ page_title|default('') }} | The Backstage</title>
+  </head>
+  <body{% for attr,val in body_attr|default([]) %} {{attr}}="{{val}}"{% endfor %}>
+    {% block body %}{% endblock %}
+    {% block javascripts %}
+      <script src="{{ asset('build/js/app.js') }}"></script>
+    {% endblock %}
+  </body>
 </html>

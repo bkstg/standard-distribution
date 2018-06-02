@@ -1,0 +1,26 @@
+{% extends "base.html.twig" %}
+{% set page_title =  'Reset Password'|trans %}
+
+{# Attributes to help with vertical centering. #}
+{% set html_attr = { 'class': 'h-100' } %}
+{% set body_attr = { 'class': 'h-100' } %}
+
+{# Kill header and footer. #}
+{% block header %}{% endblock %}
+{% block footer %}{% endblock %}
+
+{# Override entire body block. #}
+{% block body %}
+  <div class="container h-100">
+    <div class="row align-items-center h-100">
+      <div class="col-lg-4 mx-auto my-auto">
+        <div class="card">
+          <div class="card-body">
+            <h1 class="display-3">{{ 'Reset'|trans }}</h1>
+            {{ include('@FOSUser/Resetting/request_content.html.twig') }}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock body %}

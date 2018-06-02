@@ -1,0 +1,28 @@
+{
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "dev-server": "encore dev-server",
+    "dev": "encore dev",
+    "watch": "encore dev --watch",
+    "build": "encore production"
+  },
+  "devDependencies": {
+    "@symfony/webpack-encore": "^0.14.0",
+    "copy-webpack-plugin": "^4.4.2",
+    "node-sass": "^4.7.1",
+    "sass-loader": "^6.0.6",
+    "webpack-livereload-plugin": "^1.0.0"
+  },
+  "dependencies": {
+    "bootstrap": "^4.0.0",
+    "bootstrap-calendar": "^0.2.4",
+    "chosen-js": "^1.8.5",
+    "font-awesome": "^4.7.0",
+    "jquery": "^3.2.1",
+    "jquery-once": "^2.2.1",
+    "list.js": "^1.5.0",
+    "popper.js": "^1.13.0",
+    "underscore": "^1.8.3"
+  }
+}

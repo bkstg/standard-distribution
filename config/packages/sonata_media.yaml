@@ -1,0 +1,30 @@
+sonata_media:
+    default_context: default
+    db_driver: doctrine_orm
+    class:
+        media: Bkstg\MediaBundle\Entity\Media
+        gallery: Bkstg\MediaBundle\Entity\Gallery
+        gallery_has_media: Bkstg\MediaBundle\Entity\GalleryHasMedia
+    providers:
+        image:
+            resizer: sonata.media.resizer.square
+    contexts:
+        default:
+            download:
+                strategy: sonata.media.security.connected_strategy
+                mode: http
+            providers:
+                - sonata.media.provider.youtube
+                - sonata.media.provider.image
+                - sonata.media.provider.file
+                - sonata.media.provider.vimeo
+            formats:
+                square: { width: 256, height: 256, quality: 90}
+                small: { width: 256 , quality: 90}
+                big:   { width: 512 , quality: 90}
+    cdn:
+        server: ~
+    filesystem:
+        local:
+            directory: "%kernel.root_dir%/../var/uploads/media"
+            create: true
