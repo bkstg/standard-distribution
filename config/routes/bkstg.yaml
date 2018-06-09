@@ -2,5 +2,8 @@ bkstg_user:
     resource: '@BkstgFOSUserBundle/Resources/config/routing/all.yml'
 bkstg_media:
     resource: '@BkstgMediaBundle/Resources/config/routing/all.yml'
+bkstg_notice_board:
+    resource: '@BkstgNoticeBoardBundle/Resources/config/routing/all.yml'
+    prefix: /{production_slug}/board
 bkstg_core:
     resource: '@BkstgCoreBundle/Resources/config/routing/all.yml'

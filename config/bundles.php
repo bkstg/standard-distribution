@@ -28,4 +28,5 @@ return [
     Symfony\Bundle\SwiftmailerBundle\SwiftmailerBundle::class => ['all' => true],
     MidnightLuke\PhpUnitsOfMeasureBundle\MidnightLukePhpUnitsOfMeasureBundle::class => ['all' => true],
     Sonata\BlockBundle\SonataBlockBundle::class => ['all' => true],
+    Bkstg\NoticeBoardBundle\BkstgNoticeBoardBundle::class => ['all' => true],
 ];

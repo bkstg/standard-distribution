@@ -8,6 +8,7 @@
         "ext-iconv": "*",
         "bkstg/core-bundle": "2.0.x-dev",
         "bkstg/fos-user-bundle": "2.0.x-dev",
+        "bkstg/notice-board-bundle": "2.0.x-dev",
         "symfony/console": "^4.0",
         "symfony/flex": "^1.0",
         "symfony/framework-bundle": "^4.0",
@@ -16,6 +17,7 @@
         "symfony/yaml": "^4.0"
     },
     "require-dev": {
+        "kint-php/kint": "^2.2",
         "symfony/debug-pack": "^1.0",
         "symfony/dotenv": "^4.0",
         "symfony/maker-bundle": "^1.5",
