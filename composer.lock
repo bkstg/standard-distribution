@@ -56,7 +56,7 @@
             "source": {
                 "type": "git",
                 "url": "/Volumes/Luke/Development/PHP/bkstg-bundles/core-bundle",
-                "reference": "d6549a3ce68be8b86b6894e20ff0c7cf93057c8e"
+                "reference": "0783a9449f881bf5c0f64e8f201a22c34cd41cfe"
             },
             "require": {
                 "bkstg/media-bundle": "2.0.x-dev",
@@ -97,7 +97,7 @@
                 }
             ],
             "description": "Provides the core backstage functionality and requirements.",
-            "time": "2018-06-09T18:30:42+00:00"
+            "time": "2018-06-09T20:09:21+00:00"
         },
         {
             "name": "bkstg/fos-user-bundle",
@@ -105,7 +105,7 @@
             "source": {
                 "type": "git",
                 "url": "/Volumes/Luke/Development/PHP/bkstg-bundles/user-bundle",
-                "reference": "5946eae3fea0e78840b869f2d8f4d2f044d12edb"
+                "reference": "5ba644f2064aaac268dfe0a3d195b850d57133ed"
             },
             "require": {
                 "bkstg/core-bundle": "2.0.x-dev",
@@ -137,7 +137,7 @@
                 }
             ],
             "description": "Provides users for the backstage using the FOS user bundle.",
-            "time": "2018-06-02T14:41:21+00:00"
+            "time": "2018-06-09T20:18:27+00:00"
         },
         {
             "name": "bkstg/media-bundle",
@@ -145,7 +145,7 @@
             "source": {
                 "type": "git",
                 "url": "/Volumes/Luke/Development/PHP/bkstg-bundles/media-bundle",
-                "reference": "e59bf2e7518b1be8674d292b2a4fd85dd041b20e"
+                "reference": "e6dbd2b3e525041acb77a557a38a25799e55abea"
             },
             "require": {
                 "bkstg/core-bundle": "^2.0||2.0.x-dev",
@@ -173,7 +173,7 @@
                 }
             ],
             "description": "Provides the media backstage functionality and requirements.",
-            "time": "2018-02-25T01:35:41+00:00"
+            "time": "2018-06-09T20:10:20+00:00"
         },
         {
             "name": "bkstg/notice-board-bundle",
@@ -181,7 +181,7 @@
             "source": {
                 "type": "git",
                 "url": "/Volumes/Luke/Development/PHP/bkstg-bundles/noticeboard-bundle",
-                "reference": "6b8fce1959bfeed7ddabc0a082849075b586d4cf"
+                "reference": "435e783f3e58b4484922119d5dd434380c443341"
             },
             "require": {
                 "bkstg/core-bundle": "2.0.x-dev",
@@ -208,7 +208,7 @@
                 }
             ],
             "description": "Provides the backstage notice board.",
-            "time": "2018-06-09T18:29:06+00:00"
+            "time": "2018-06-09T20:12:03+00:00"
         },
         {
             "name": "cocur/slugify",
@@ -2177,12 +2177,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/midnightLuke/group-security-bundle.git",
-                "reference": "b3bbf1c7b6ee811e30c15861f4bd8947ad87f36e"
+                "reference": "3f9e9fe6877348547fe2409d93561a46c633608e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/midnightLuke/group-security-bundle/zipball/b3bbf1c7b6ee811e30c15861f4bd8947ad87f36e",
-                "reference": "b3bbf1c7b6ee811e30c15861f4bd8947ad87f36e",
+                "url": "https://api.github.com/repos/midnightLuke/group-security-bundle/zipball/3f9e9fe6877348547fe2409d93561a46c633608e",
+                "reference": "3f9e9fe6877348547fe2409d93561a46c633608e",
                 "shasum": ""
             },
             "require": {
@@ -2210,7 +2210,7 @@
                 }
             ],
             "description": "Provides interfaces for group functionality and security voters.",
-            "time": "2018-05-19T12:35:23+00:00"
+            "time": "2018-06-09T20:06:57+00:00"
         },
         {
             "name": "midnightluke/php-units-of-measure-bundle",

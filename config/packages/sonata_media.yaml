@@ -19,9 +19,11 @@ sonata_media:
                 - sonata.media.provider.file
                 - sonata.media.provider.vimeo
             formats:
-                square: { width: 256, height: 256, quality: 90}
-                small: { width: 256 , quality: 90}
-                big:   { width: 512 , quality: 90}
+                square: { width: 256, height: 256, quality: 90 }
+                small: { width: 256 , quality: 90 }
+                big: { width: 512 , quality: 90 }
+                card_banner: { width: 705, height: 370, quality: 90 }
+
     cdn:
         server: ~
     filesystem:
