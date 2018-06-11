@@ -10,20 +10,14 @@ sonata_media:
             resizer: sonata.media.resizer.simple
     contexts:
         default:
-            download:
-                strategy: sonata.media.security.connected_strategy
-                mode: http
             providers:
-                - sonata.media.provider.youtube
                 - sonata.media.provider.image
                 - sonata.media.provider.file
-                - sonata.media.provider.vimeo
             formats:
                 square: { width: 256, height: 256, quality: 90 }
                 small: { width: 256 , quality: 90 }
                 big: { width: 512 , quality: 90 }
                 card_banner: { width: 705, height: 370, quality: 90 }
-
     cdn:
         server:
             path: /media/serve
