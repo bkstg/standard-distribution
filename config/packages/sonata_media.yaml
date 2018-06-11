@@ -7,7 +7,7 @@ sonata_media:
         gallery_has_media: Bkstg\MediaBundle\Entity\GalleryHasMedia
     providers:
         image:
-            resizer: sonata.media.resizer.square
+            resizer: sonata.media.resizer.simple
     contexts:
         default:
             download:
@@ -25,7 +25,8 @@ sonata_media:
                 card_banner: { width: 705, height: 370, quality: 90 }
 
     cdn:
-        server: ~
+        server:
+            path: /media/serve
     filesystem:
         local:
             directory: "%kernel.root_dir%/../var/uploads/media"
