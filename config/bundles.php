@@ -29,4 +29,5 @@ return [
     MidnightLuke\PhpUnitsOfMeasureBundle\MidnightLukePhpUnitsOfMeasureBundle::class => ['all' => true],
     Sonata\BlockBundle\SonataBlockBundle::class => ['all' => true],
     Bkstg\NoticeBoardBundle\BkstgNoticeBoardBundle::class => ['all' => true],
+    Bkstg\ScheduleBundle\BkstgScheduleBundle::class => ['all' => true],
 ];

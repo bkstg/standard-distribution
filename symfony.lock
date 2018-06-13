@@ -14,6 +14,9 @@
     "bkstg/notice-board-bundle": {
         "version": "2.0.x-dev"
     },
+    "bkstg/schedule-bundle": {
+        "version": "2.0.x-dev"
+    },
     "cocur/slugify": {
         "version": "v3.1"
     },

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "e601fa767ad5ba398bf4bf8da216b454",
+    "content-hash": "868ac6b36e53af6f5846167facc61f9f",
     "packages": [
         {
             "name": "behat/transliterator",
@@ -209,6 +209,41 @@
             ],
             "description": "Provides the backstage notice board.",
             "time": "2018-06-10T16:22:08+00:00"
+        },
+        {
+            "name": "bkstg/schedule-bundle",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "/Volumes/Luke/Development/PHP/bkstg-bundles/schedule-bundle",
+                "reference": "7f4f862ea522530a83920c3aa581fe1d1c2333db"
+            },
+            "require": {
+                "bkstg/core-bundle": "2.0.x-dev",
+                "symfony/framework-bundle": "^2.8||^4.0"
+            },
+            "type": "symfony-bundle",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Bkstg\\ScheduleBundle\\": ""
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Luke Bainbridge",
+                    "email": "luke.bainbridge@gmail.com"
+                }
+            ],
+            "description": "Provides the backstage schedule.",
+            "time": "2018-06-13T11:07:33+00:00"
         },
         {
             "name": "cocur/slugify",
@@ -6826,6 +6861,7 @@
         "bkstg/core-bundle": 20,
         "bkstg/fos-user-bundle": 20,
         "bkstg/notice-board-bundle": 20,
+        "bkstg/schedule-bundle": 20,
         "symfony/lts": 20
     },
     "prefer-stable": true,
