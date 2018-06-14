@@ -30,4 +30,5 @@ return [
     Sonata\BlockBundle\SonataBlockBundle::class => ['all' => true],
     Bkstg\NoticeBoardBundle\BkstgNoticeBoardBundle::class => ['all' => true],
     Bkstg\ScheduleBundle\BkstgScheduleBundle::class => ['all' => true],
+    Bkstg\ResourceBundle\BkstgResourceBundle::class => ['all' => true],
 ];

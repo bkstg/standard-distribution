@@ -9,5 +9,8 @@ bkstg_notice_board:
 bkstg_schedule:
     resource: "@BkstgScheduleBundle/Resources/config/routing/all.yml"
     prefix:   /{production_slug}/schedule
+bkstg_resource:
+    resource: "@BkstgResourceBundle/Resources/config/routing/all.yml"
+    prefix:   /{production_slug}/resource
 bkstg_core:
     resource: '@BkstgCoreBundle/Resources/config/routing/all.yml'

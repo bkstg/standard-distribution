@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "868ac6b36e53af6f5846167facc61f9f",
+    "content-hash": "ce38d08ceae7f587dd57bc3125803491",
     "packages": [
         {
             "name": "behat/transliterator",
@@ -209,6 +209,41 @@
             ],
             "description": "Provides the backstage notice board.",
             "time": "2018-06-10T16:22:08+00:00"
+        },
+        {
+            "name": "bkstg/resource-bundle",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "/Volumes/Luke/Development/PHP/bkstg-bundles/resource-bundle",
+                "reference": "b1a2c0ea1c1f4020b0f8e8f0fc5be53955ea41b1"
+            },
+            "require": {
+                "bkstg/core-bundle": "2.0.x-dev",
+                "symfony/framework-bundle": "^2.8||^4.0"
+            },
+            "type": "symfony-bundle",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Bkstg\\ResourceBundle\\": ""
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Luke Bainbridge",
+                    "email": "luke.bainbridge@gmail.com"
+                }
+            ],
+            "description": "Provides the backstage resources.",
+            "time": "2018-06-13T17:32:11+00:00"
         },
         {
             "name": "bkstg/schedule-bundle",
@@ -6861,6 +6896,7 @@
         "bkstg/core-bundle": 20,
         "bkstg/fos-user-bundle": 20,
         "bkstg/notice-board-bundle": 20,
+        "bkstg/resource-bundle": 20,
         "bkstg/schedule-bundle": 20,
         "symfony/lts": 20
     },
