@@ -1,7 +1,6 @@
 var Encore = require('@symfony/webpack-encore');
 var webpack = require('webpack');
 var LiveReloadPlugin = require('webpack-livereload-plugin');
-var CopyWebpackPlugin = require('copy-webpack-plugin');
 
 Encore
     // the project directory where compiled assets will be stored
@@ -13,11 +12,6 @@ Encore
     .addStyleEntry('css/app', './assets/css/app.scss')
     .cleanupOutputBeforeBuild()
     .enableSourceMaps(!Encore.isProduction())
-
-    // Schedule template configuration.
-    .addPlugin(new CopyWebpackPlugin([
-        { from: './node_modules/bootstrap-calendar', to: 'components/bootstrap-calendar' },
-    ]))
 
     // Add plugins.
     .autoProvidejQuery()
