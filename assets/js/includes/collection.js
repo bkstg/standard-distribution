@@ -12,7 +12,7 @@ Globals.behaviours.collection_item_add = function() {
     $(this).data('index', $(this).find('.collection-items').children().length);
 
     // Add click function to the add link.
-    $(this).find('.collection-item-add').click(function (e) {
+    $(this).find('.collection-item-add').last().click(function (e) {
       e.preventDefault();
 
       // Get the prototype and the index.
@@ -39,7 +39,7 @@ Globals.behaviours.collection_item_remove = function () {
     var li = $(this);
     var collection_holder = $(this).closest('.form-collection');
 
-    $(li).find('.collection-item-remove').click(function (e) {
+    $(li).find('.collection-item-remove').last().click(function (e) {
       e.preventDefault();
 
       // Remove li and decrement the index.
