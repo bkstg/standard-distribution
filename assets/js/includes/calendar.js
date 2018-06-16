@@ -11,7 +11,7 @@ Globals.behaviours.calendar = function() {
 
   $('#calendar').once().each(function() {
     var calendar = $(this).calendar({
-      tmpl_path: "/build/components/bootstrap-calendar/tmpls/",
+      tmpl_path: "/bundles/bkstgschedule/templates/",
       events_source: $(this).data('search-url'),
       format12: true,
       view: 'week',
