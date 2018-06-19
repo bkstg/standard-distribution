@@ -51,7 +51,7 @@ ul.pagination {
       background-color: darken($gray-800, 10%) !important;
       padding-left: 1.5em;
       font-size: 0.9rem;
-      &.active {
+      &.current {
         border: none;
         border-left: solid 5px #555;
       }
