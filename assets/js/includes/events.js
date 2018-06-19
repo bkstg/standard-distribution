@@ -20,8 +20,29 @@ Globals.behaviours.full_company_widget = function() {
   });
 }
 
-Globals.behaviours.google_maps_autocomplete = function() {
+Globals.behaviours.full_company_hide = function() {
+  $('.full-company-wrapper').once().each(function (e) {
+    // Gather some variables.
+    var toggle = $(this).find('.full-company-toggle');
+    var show_label = $(toggle).html();
+    var hide_label = $(toggle).data('hide-label');
+    var invitations = $(this).find('.full-company-list');
 
+    // Hide invitations by default and toggle on click.
+    $(invitations).hide();
+    $(toggle).click(function (e) {
+      e.preventDefault();
+      $(invitations).toggle();
+      if ($(toggle).html() == show_label) {
+        $(toggle).html(hide_label);
+      } else {
+        $(toggle).html(show_label);
+      }
+    });
+  });
+}
+
+Globals.behaviours.google_maps_autocomplete = function() {
   function initAutocomplete() {
     $('input.google-geolocate').once().each(function (e) {
       // Setup autocomplete.
