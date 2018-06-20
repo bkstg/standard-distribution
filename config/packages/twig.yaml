@@ -1,6 +1,7 @@
 twig:
     globals:
         google_api_key: '%env(GOOGLE_API_KEY)%'
+        full_date: 'M d, Y g:i:s a'
     paths: ['%kernel.project_dir%/templates']
     debug: '%kernel.debug%'
     strict_variables: '%kernel.debug%'
