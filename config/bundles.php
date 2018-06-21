@@ -31,4 +31,5 @@ return [
     Bkstg\NoticeBoardBundle\BkstgNoticeBoardBundle::class => ['all' => true],
     Bkstg\ScheduleBundle\BkstgScheduleBundle::class => ['all' => true],
     Bkstg\ResourceBundle\BkstgResourceBundle::class => ['all' => true],
+    Exercise\HTMLPurifierBundle\ExerciseHTMLPurifierBundle::class => ['all' => true],
 ];
