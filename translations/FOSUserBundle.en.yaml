@@ -1,0 +1,9 @@
+security:
+  login:
+    forgot_password: 'Forgot password?'
+layout:
+  reset: 'Reset'
+  check_email: 'Check email'
+resetting:
+  request:
+    cancel: 'Cancel'

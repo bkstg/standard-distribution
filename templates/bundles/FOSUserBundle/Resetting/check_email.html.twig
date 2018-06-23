@@ -1,14 +1,10 @@
+{% extends 'base.html.twig' %}
 {% trans_default_domain 'FOSUserBundle' %}
-{% extends "base.html.twig" %}
-{% set page_title =  'Reset Password'|trans %}
+{% set page_title =  'layout.check_email'|trans %}
 
 {# Attributes to help with vertical centering. #}
 {% set html_attr = { 'class': 'h-100' } %}
 {% set body_attr = { 'class': 'h-100' } %}
-
-{# Kill header and footer. #}
-{% block header %}{% endblock %}
-{% block footer %}{% endblock %}
 
 {# Override entire body block. #}
 {% block body %}

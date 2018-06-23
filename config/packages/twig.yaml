@@ -7,4 +7,6 @@ twig:
     strict_variables: '%kernel.debug%'
     form_themes:
         - 'bootstrap_4_layout.html.twig'
+        - '@SonataMedia/Form/media_widgets.html.twig'
         - '_form_collection.html.twig'
+        - '_units_widgets.html.twig'
