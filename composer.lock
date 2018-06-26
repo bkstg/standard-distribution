@@ -105,7 +105,7 @@
             "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "/Volumes/Luke/Development/PHP/bkstg-bundles/user-bundle",
+                "url": "/Volumes/Luke/Development/PHP/bkstg-bundles/fos-user-bundle",
                 "reference": "185eee608c2e161434630b5fc094bc0744e08e60"
             },
             "require": {
@@ -181,7 +181,7 @@
             "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "/Volumes/Luke/Development/PHP/bkstg-bundles/noticeboard-bundle",
+                "url": "/Volumes/Luke/Development/PHP/bkstg-bundles/notice-board-bundle",
                 "reference": "781cbb6d7dabdf31f9efc5e884a639a65abcc7a3"
             },
             "require": {
@@ -2383,16 +2383,16 @@
         },
         {
             "name": "midnightluke/php-units-of-measure-bundle",
-            "version": "1.0.0-alpha4",
+            "version": "1.0.0-alpha5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/midnightLuke/php-units-of-measure-bundle.git",
-                "reference": "1c73552e6a1eb99bb7249b6d0b6bb0568e362aa5"
+                "reference": "eecb732140aedc9c80af6dc9ee62ea5f0aac8453"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/midnightLuke/php-units-of-measure-bundle/zipball/1c73552e6a1eb99bb7249b6d0b6bb0568e362aa5",
-                "reference": "1c73552e6a1eb99bb7249b6d0b6bb0568e362aa5",
+                "url": "https://api.github.com/repos/midnightLuke/php-units-of-measure-bundle/zipball/eecb732140aedc9c80af6dc9ee62ea5f0aac8453",
+                "reference": "eecb732140aedc9c80af6dc9ee62ea5f0aac8453",
                 "shasum": ""
             },
             "require": {
@@ -2432,7 +2432,7 @@
                 }
             ],
             "description": "Symfony bundle wrapper for the PHP Units of Measure library with useful doctrine and form types.",
-            "time": "2018-05-02T16:59:21+00:00"
+            "time": "2018-06-26T16:35:33+00:00"
         },
         {
             "name": "paragonie/random_compat",
