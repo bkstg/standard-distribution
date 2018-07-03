@@ -15,7 +15,6 @@
         "symfony/flex": "^1.0",
         "symfony/framework-bundle": "^4.0",
         "symfony/lts": "^4@dev",
-        "symfony/webpack-encore-pack": "^1.0",
         "symfony/yaml": "^4.0"
     },
     "require-dev": {
@@ -52,7 +51,8 @@
     "scripts": {
         "auto-scripts": {
             "cache:clear": "symfony-cmd",
-            "assets:install --symlink --relative %PUBLIC_DIR%": "symfony-cmd"
+            "assets:install --symlink --relative %PUBLIC_DIR%": "symfony-cmd",
+            "maba:webpack:install-node-modules": "symfony-cmd"
         },
         "post-install-cmd": [
             "@auto-scripts"
