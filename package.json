@@ -8,7 +8,7 @@
     "build": "encore production"
   },
   "devDependencies": {
-    "@symfony/webpack-encore": "^0.14.0",
+    "@symfony/webpack-encore": "^0.20.0",
     "node-sass": "^4.7.1",
     "sass-loader": "^6.0.6",
     "webpack-livereload-plugin": "^1.0.0"

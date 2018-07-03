@@ -1,82 +1,8 @@
+// Libraries.
 @import '~bootstrap/scss/bootstrap';
 @import '~font-awesome/scss/font-awesome';
-@import '~bootstrap-calendar/css/calendar.css';
 
-.post {
-  padding-top: 1em;
-  padding-bottom: 1em;
-
-  &:hover {
-    background-color: lighten($gray-800, 75%);
-  }
-  &:target {
-    background-color: lighten($blue, 45%);
-    &:hover {
-      background-color: lighten($blue, 45%);
-    }
-  }
-  .children {
-    margin-top: 1em;
-    border-left: solid 4px lighten($gray-800, 50%);
-    background-color: lighten($gray-800, 75%);
-  }
-  &.pinned {
-    background-color: lighten($yellow, 45%);
-    border-left: solid 4px $yellow;
-    &:target {
-      background-color: lighten($yellow, 45%);
-      &:hover {
-        background-color: lighten($yellow, 45%);
-      }
-    }
-  }
-}
-
-ul.pagination {
-  margin-top: 1em;
-}
-
-.sidebar-menu {
-  .list-group {
-    z-index: 0;
-    .active {
-      border: none;
-      background-color: darken($gray-800, 10%) !important;
-    }
-    width: 100%;
-    a {
-      border-radius: 0;
-    }
-    .list-group .list-group-item {
-      background-color: darken($gray-800, 10%) !important;
-      padding-left: 1.5em;
-      font-size: 0.9rem;
-      &.current {
-        border: none;
-        border-left: solid 5px #555;
-      }
-    }
-  }
-  h5 {
-    margin: .5rem;
-    color: $white;
-  }
-}
-
-ul.search-results {
-  list-style-type: none;
-  padding-left: 0;
-  .breadcrumb {
-    font-size: .85em;
-    padding: .5em;
-    background-color: lighten($gray-800, 75%);
-  }
-  .search-result {
-    margin: 1em 0;
-    padding: 1em;
-    border-left: solid 4px $gray-800;
-    &:hover {
-      background-color: lighten($gray-800, 75%);
-    }
-  }
-}
+// Bkstg assets.
+@import '~@BkstgCoreBundle/Resources/assets/css/all';
+@import '~@BkstgNoticeBoardBundle/Resources/assets/css/all';
+@import '~@BkstgScheduleBundle/Resources/assets/css/all';

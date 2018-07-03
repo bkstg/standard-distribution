@@ -1,5 +1,6 @@
 var Encore = require('@symfony/webpack-encore');
 var webpack = require('webpack');
+var path = require('path');
 var LiveReloadPlugin = require('webpack-livereload-plugin');
 
 Encore
@@ -18,6 +19,13 @@ Encore
     .addPlugin(new webpack.ProvidePlugin({ _: 'underscore' }))
     .addPlugin(new webpack.ProvidePlugin({ Popper: ['popper.js', 'default'] }))
     .addPlugin(new LiveReloadPlugin())
+
+    // Add aliases to bundles.
+    .addAliases({
+        '@BkstgCoreBundle': path.resolve(__dirname, './vendor/bkstg/core-bundle'),
+        '@BkstgNoticeBoardBundle': path.resolve(__dirname, './vendor/bkstg/notice-board-bundle'),
+        '@BkstgScheduleBundle': path.resolve(__dirname, './vendor/bkstg/schedule-bundle')
+    })
 
     // Settings for output.
     .cleanupOutputBeforeBuild()
