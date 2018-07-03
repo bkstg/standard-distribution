@@ -1,21 +1,19 @@
 <!DOCTYPE html>
-<html lang="{{ app.request.locale|default('en') }}"{% for attr,val in html_attr|default([]) %} {{ attr }}="{{ val }}"{% endfor %}>
+<html lang="{{ app.request.locale|default('en') }}"{% for attr,val in html_attr|default([]) %} {{attr}}="{{val}}"{% endfor %}>
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     {% block stylesheets %}
-      {% webpack css '@assets/css/app.scss' %}
-        <link rel="stylesheet" href="{{ asset_url }}"/>
-      {% end_webpack %}
+        <link rel="stylesheet" href="{{ asset('build/css/app.css') }}">
     {% endblock %}
 
     <title>{{ page_title|default('') }} | {{ 'site.name'|trans }}</title>
   </head>
-  <body{% for attr,val in body_attr|default([]) %} {{ attr }}="{{ val }}"{% endfor %}>
+  <body{% for attr,val in body_attr|default([]) %} {{attr}}="{{val}}"{% endfor %}>
     {% block body %}{% endblock %}
     {% block javascripts %}
-      <script src="{{ webpack_asset('@assets/js/app.js') }}"></script>
+      <script src="{{ asset('build/js/app.js') }}"></script>
     {% endblock %}
   </body>
 </html>

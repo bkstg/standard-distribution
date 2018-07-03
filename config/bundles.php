@@ -32,5 +32,4 @@ return [
     Bkstg\ScheduleBundle\BkstgScheduleBundle::class => ['all' => true],
     Bkstg\ResourceBundle\BkstgResourceBundle::class => ['all' => true],
     Exercise\HTMLPurifierBundle\ExerciseHTMLPurifierBundle::class => ['all' => true],
-    Maba\Bundle\WebpackBundle\MabaWebpackBundle::class => ['all' => true],
 ];
