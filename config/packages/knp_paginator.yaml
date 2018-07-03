@@ -1,4 +1,4 @@
 knp_paginator:
     template:
         pagination: '@KnpPaginator/Pagination/twitter_bootstrap_v4_pagination.html.twig'
-        sortable: '_sortable_link.html.twig'
+        sortable: '@BkstgCore/_sortable_link.html.twig'
