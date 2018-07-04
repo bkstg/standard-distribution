@@ -2340,16 +2340,16 @@
         },
         {
             "name": "midnightluke/group-security-bundle",
-            "version": "dev-master",
+            "version": "1.0.0-alpha4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/midnightLuke/group-security-bundle.git",
-                "reference": "c9da6ac839a0951a05f49f455935c220beeb7fde"
+                "reference": "0d8ed98e71c2bc33b070d4c4b48f365f65f4016f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/midnightLuke/group-security-bundle/zipball/c9da6ac839a0951a05f49f455935c220beeb7fde",
-                "reference": "c9da6ac839a0951a05f49f455935c220beeb7fde",
+                "url": "https://api.github.com/repos/midnightLuke/group-security-bundle/zipball/0d8ed98e71c2bc33b070d4c4b48f365f65f4016f",
+                "reference": "0d8ed98e71c2bc33b070d4c4b48f365f65f4016f",
                 "shasum": ""
             },
             "require": {
@@ -2377,7 +2377,7 @@
                 }
             ],
             "description": "Provides interfaces for group functionality and security voters.",
-            "time": "2018-06-09T20:19:00+00:00"
+            "time": "2018-07-04T01:09:52+00:00"
         },
         {
             "name": "midnightluke/php-units-of-measure-bundle",
