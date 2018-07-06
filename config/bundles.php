@@ -32,4 +32,6 @@ return [
     Bkstg\ScheduleBundle\BkstgScheduleBundle::class => ['all' => true],
     Bkstg\ResourceBundle\BkstgResourceBundle::class => ['all' => true],
     Exercise\HTMLPurifierBundle\ExerciseHTMLPurifierBundle::class => ['all' => true],
+    Spy\TimelineBundle\SpyTimelineBundle::class => ['all' => true],
+    Bkstg\TimelineBundle\BkstgTimelineBundle::class => ['all' => true],
 ];

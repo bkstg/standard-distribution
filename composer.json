@@ -11,6 +11,7 @@
         "bkstg/notice-board-bundle": "2.0.x-dev",
         "bkstg/resource-bundle": "2.0.x-dev",
         "bkstg/schedule-bundle": "2.0.x-dev",
+        "bkstg/timeline-bundle": "^2.0@dev",
         "symfony/console": "^4.0",
         "symfony/flex": "^1.0",
         "symfony/framework-bundle": "^4.0",

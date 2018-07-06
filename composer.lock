@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ce38d08ceae7f587dd57bc3125803491",
+    "content-hash": "4ff4a3e182812e1855c2041ae82e1565",
     "packages": [
         {
             "name": "behat/transliterator",
@@ -279,6 +279,42 @@
             ],
             "description": "Provides the backstage schedule.",
             "time": "2018-07-03T10:44:50+00:00"
+        },
+        {
+            "name": "bkstg/timeline-bundle",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "/Volumes/Luke/Development/PHP/bkstg-bundles/timeline-bundle",
+                "reference": "6b130d4da518c107fcf5411c6b94097ff9cdfa7c"
+            },
+            "require": {
+                "bkstg/core-bundle": "2.0.x-dev",
+                "stephpy/timeline-bundle": "^2.4",
+                "symfony/framework-bundle": "^3.3||^4.0"
+            },
+            "type": "symfony-bundle",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Bkstg\\TimelineBundle\\": ""
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Luke Bainbridge",
+                    "email": "luke.bainbridge@gmail.com"
+                }
+            ],
+            "description": "Provides the backstage timelines.",
+            "time": "2018-06-03T11:33:46+00:00"
         },
         {
             "name": "cocur/slugify",
@@ -3391,6 +3427,130 @@
                 "youtube"
             ],
             "time": "2018-06-26T22:19:49+00:00"
+        },
+        {
+            "name": "stephpy/timeline",
+            "version": "v1.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/stephpy/timeline.git",
+                "reference": "d059ba3c2ffbefc2ec6d8ac68c7d6037b890b487"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/stephpy/timeline/zipball/d059ba3c2ffbefc2ec6d8ac68c7d6037b890b487",
+                "reference": "d059ba3c2ffbefc2ec6d8ac68c7d6037b890b487",
+                "shasum": ""
+            },
+            "require": {
+                "doctrine/common": "~2.2",
+                "php": ">=5.3.2",
+                "symfony/options-resolver": "*"
+            },
+            "require-dev": {
+                "atoum/atoum": "dev-master",
+                "knplabs/knp-components": "1.*",
+                "pimple/pimple": "*",
+                "symfony/event-dispatcher": "2.*"
+            },
+            "suggest": {
+                "ext-redis": "Redis C extension for PHP",
+                "knplabs/knp-components": "Knp Paginator",
+                "pimple/pimple": "Use ServiceLocator",
+                "predis/predis": "Redis PHP client library"
+            },
+            "type": "package",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.1.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Spy\\Timeline\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Community contributors",
+                    "homepage": "https://github.com/stephpy/timeline/contributors"
+                }
+            ],
+            "description": "Standalone library to create timelines",
+            "homepage": "https://github.com/stephpy/timeline",
+            "keywords": [
+                "standalone",
+                "timeline"
+            ],
+            "time": "2018-02-19T17:36:49+00:00"
+        },
+        {
+            "name": "stephpy/timeline-bundle",
+            "version": "v2.5.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/stephpy/timeline-bundle.git",
+                "reference": "874e124f0ae773e16cc1e2ceee799685ad3daa82"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/stephpy/timeline-bundle/zipball/874e124f0ae773e16cc1e2ceee799685ad3daa82",
+                "reference": "874e124f0ae773e16cc1e2ceee799685ad3daa82",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.2",
+                "stephpy/timeline": "*",
+                "symfony/framework-bundle": "~2.0|~3.0|~4.0",
+                "symfony/options-resolver": "~2.0|~3.0|~4.0"
+            },
+            "require-dev": {
+                "atoum/atoum": "1.*|3.*",
+                "doctrine/orm": "2.*",
+                "symfony/console": "~2.0|~3.0|~4.0",
+                "symfony/expression-language": "~2.0|~3.0|~4.0",
+                "symfony/twig-bundle": "~2.0|~3.0|~4.0"
+            },
+            "suggest": {
+                "doctrine/mongodb-odm-bundle": "Use doctrine ODM driver",
+                "doctrine/orm": "Use doctrine ORM driver",
+                "snc/redis-bundle": "Use redis driver",
+                "symfony/console": "List spreads and deploy timelines via a command"
+            },
+            "type": "symfony-bundle",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.2.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Spy\\TimelineBundle\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Community contributors",
+                    "homepage": "https://github.com/stephpy/timeline-bundle/contributors"
+                }
+            ],
+            "description": "Symfony2 bundle to make timeline",
+            "homepage": "https://github.com/stephpy/timeline-bundle",
+            "keywords": [
+                "bundle",
+                "notification",
+                "symfony",
+                "timeline"
+            ],
+            "time": "2017-11-20T08:16:04+00:00"
         },
         {
             "name": "stof/doctrine-extensions-bundle",
@@ -6997,6 +7157,7 @@
         "bkstg/notice-board-bundle": 20,
         "bkstg/resource-bundle": 20,
         "bkstg/schedule-bundle": 20,
+        "bkstg/timeline-bundle": 20,
         "symfony/lts": 20
     },
     "prefer-stable": true,

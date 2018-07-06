@@ -1,0 +1,26 @@
+spy_timeline:
+    filters:
+        data_hydrator:
+            priority: 20
+            service: spy_timeline.filter.data_hydrator
+            locators:
+                - spy_timeline.filter.data_hydrator.locator.doctrine_orm
+    drivers:
+        orm:
+            object_manager: doctrine.orm.entity_manager
+            classes:
+                query_builder: ~
+                timeline:  Bkstg\TimelineBundle\Entity\Timeline
+                action:    Bkstg\TimelineBundle\Entity\Action
+                component: Bkstg\TimelineBundle\Entity\Component
+                action_component: Bkstg\TimelineBundle\Entity\ActionComponent
+    notifiers:
+        - Bkstg\TimelineBundle\Notifier\UnreadNotificationManager
+    render:
+        path:     ':Timeline'
+        fallback: 'BkstgTimelineBundle:Timeline:default.html.twig'
+        resources:
+            - 'BkstgTimelineBundle:Timeline:components.html.twig'
+    resolve_component:
+        resolver: spy_timeline.resolve_component.doctrine
+    paginator: spy_timeline.paginator.knp
