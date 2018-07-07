@@ -1,7 +1,6 @@
 spy_timeline:
     filters:
         data_hydrator:
-            priority: 20
             service: spy_timeline.filter.data_hydrator
             locators:
                 - spy_timeline.filter.data_hydrator.locator.doctrine_orm
@@ -17,10 +16,9 @@ spy_timeline:
     notifiers:
         - Bkstg\TimelineBundle\Notifier\UnreadNotificationManager
     render:
-        path:     ':Timeline'
-        fallback: 'BkstgTimelineBundle:Timeline:default.html.twig'
+        fallback: '@BkstgTimeline\Timeline\default.html.twig'
         resources:
-            - 'BkstgTimelineBundle:Timeline:components.html.twig'
+            - '@BkstgTimeline\Timeline\components.html.twig'
     resolve_component:
         resolver: spy_timeline.resolve_component.doctrine
     paginator: spy_timeline.paginator.knp

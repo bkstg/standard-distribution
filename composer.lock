@@ -56,7 +56,7 @@
             "source": {
                 "type": "git",
                 "url": "/Volumes/Luke/Development/PHP/bkstg-bundles/core-bundle",
-                "reference": "0a72c2494e79143fe97eb2c1befba2fd18b10aa9"
+                "reference": "465de4da3469a7f43a927a0b73eccbe21f01ac13"
             },
             "require": {
                 "bkstg/media-bundle": "2.0.x-dev",
@@ -97,7 +97,7 @@
                 }
             ],
             "description": "Provides the core backstage functionality and requirements.",
-            "time": "2018-07-03T10:46:09+00:00"
+            "time": "2018-07-05T10:56:41+00:00"
         },
         {
             "name": "bkstg/fos-user-bundle",
@@ -105,7 +105,7 @@
             "source": {
                 "type": "git",
                 "url": "/Volumes/Luke/Development/PHP/bkstg-bundles/fos-user-bundle",
-                "reference": "0a0c202bb7622ac5f6bea8306c2fb38d4d819cdc"
+                "reference": "854aa0a032fbe2b8c28cef3976314f45bae08936"
             },
             "require": {
                 "bkstg/core-bundle": "2.0.x-dev",
@@ -137,7 +137,7 @@
                 }
             ],
             "description": "Provides users for the backstage using the FOS user bundle.",
-            "time": "2018-07-02T18:49:21+00:00"
+            "time": "2018-07-05T10:42:50+00:00"
         },
         {
             "name": "bkstg/media-bundle",
@@ -145,7 +145,7 @@
             "source": {
                 "type": "git",
                 "url": "/Volumes/Luke/Development/PHP/bkstg-bundles/media-bundle",
-                "reference": "5e0d1d3d8fa43f75c668dbf9efe2839337be1476"
+                "reference": "af2facc6a60e832ea8e92b005a76957f1eb15f4b"
             },
             "require": {
                 "bkstg/core-bundle": "^2.0||2.0.x-dev",
@@ -173,7 +173,7 @@
                 }
             ],
             "description": "Provides the media backstage functionality and requirements.",
-            "time": "2018-07-02T18:50:11+00:00"
+            "time": "2018-07-05T10:44:07+00:00"
         },
         {
             "name": "bkstg/notice-board-bundle",
@@ -181,7 +181,7 @@
             "source": {
                 "type": "git",
                 "url": "/Volumes/Luke/Development/PHP/bkstg-bundles/notice-board-bundle",
-                "reference": "70024b20eea51cd8a2673d3ede3ba983c3d072f6"
+                "reference": "b80f8450d40670f13a0c3316fc3ac83576587351"
             },
             "require": {
                 "bkstg/core-bundle": "2.0.x-dev",
@@ -208,7 +208,7 @@
                 }
             ],
             "description": "Provides the backstage notice board.",
-            "time": "2018-07-03T10:43:53+00:00"
+            "time": "2018-07-06T10:48:49+00:00"
         },
         {
             "name": "bkstg/resource-bundle",
@@ -216,7 +216,7 @@
             "source": {
                 "type": "git",
                 "url": "/Volumes/Luke/Development/PHP/bkstg-bundles/resource-bundle",
-                "reference": "ebc32369556142d516690f3270d3dfebc3e3f4d8"
+                "reference": "9796b8f8c156951e2b20ca0a9e4e20b37baeea9d"
             },
             "require": {
                 "bkstg/core-bundle": "2.0.x-dev",
@@ -243,7 +243,7 @@
                 }
             ],
             "description": "Provides the backstage resources.",
-            "time": "2018-07-02T18:50:57+00:00"
+            "time": "2018-07-04T01:00:35+00:00"
         },
         {
             "name": "bkstg/schedule-bundle",
@@ -251,7 +251,7 @@
             "source": {
                 "type": "git",
                 "url": "/Volumes/Luke/Development/PHP/bkstg-bundles/schedule-bundle",
-                "reference": "7cf31609319d450821e6b512330cbc2530a035f6"
+                "reference": "90c1ae7538300e1a5975d6368732f44df5dab3ab"
             },
             "require": {
                 "bkstg/core-bundle": "2.0.x-dev",
@@ -278,7 +278,7 @@
                 }
             ],
             "description": "Provides the backstage schedule.",
-            "time": "2018-07-03T10:44:50+00:00"
+            "time": "2018-07-06T10:48:14+00:00"
         },
         {
             "name": "bkstg/timeline-bundle",
@@ -286,11 +286,11 @@
             "source": {
                 "type": "git",
                 "url": "/Volumes/Luke/Development/PHP/bkstg-bundles/timeline-bundle",
-                "reference": "6b130d4da518c107fcf5411c6b94097ff9cdfa7c"
+                "reference": "0e69096cc01064613d2b8e421b983e5bbbeeb0db"
             },
             "require": {
                 "bkstg/core-bundle": "2.0.x-dev",
-                "stephpy/timeline-bundle": "^2.4",
+                "stephpy/timeline-bundle": "^3.0",
                 "symfony/framework-bundle": "^3.3||^4.0"
             },
             "type": "symfony-bundle",
@@ -314,7 +314,7 @@
                 }
             ],
             "description": "Provides the backstage timelines.",
-            "time": "2018-06-03T11:33:46+00:00"
+            "time": "2018-07-06T10:58:24+00:00"
         },
         {
             "name": "cocur/slugify",
@@ -2470,16 +2470,16 @@
         },
         {
             "name": "paragonie/random_compat",
-            "version": "v2.0.15",
+            "version": "v2.0.17",
             "source": {
                 "type": "git",
                 "url": "https://github.com/paragonie/random_compat.git",
-                "reference": "10bcb46e8f3d365170f6de9d05245aa066b81f09"
+                "reference": "29af24f25bab834fcbb38ad2a69fa93b867e070d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/paragonie/random_compat/zipball/10bcb46e8f3d365170f6de9d05245aa066b81f09",
-                "reference": "10bcb46e8f3d365170f6de9d05245aa066b81f09",
+                "url": "https://api.github.com/repos/paragonie/random_compat/zipball/29af24f25bab834fcbb38ad2a69fa93b867e070d",
+                "reference": "29af24f25bab834fcbb38ad2a69fa93b867e070d",
                 "shasum": ""
             },
             "require": {
@@ -2515,7 +2515,7 @@
                 "pseudorandom",
                 "random"
             ],
-            "time": "2018-06-08T15:26:40+00:00"
+            "time": "2018-07-04T16:31:37+00:00"
         },
         {
             "name": "php-units-of-measure/php-units-of-measure",
@@ -3490,27 +3490,30 @@
         },
         {
             "name": "stephpy/timeline-bundle",
-            "version": "v2.5.0",
+            "version": "3.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/stephpy/timeline-bundle.git",
-                "reference": "874e124f0ae773e16cc1e2ceee799685ad3daa82"
+                "reference": "e408d9d17a811e74c51ddcb9f03d8aa8fdc5a583"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/stephpy/timeline-bundle/zipball/874e124f0ae773e16cc1e2ceee799685ad3daa82",
-                "reference": "874e124f0ae773e16cc1e2ceee799685ad3daa82",
+                "url": "https://api.github.com/repos/stephpy/timeline-bundle/zipball/e408d9d17a811e74c51ddcb9f03d8aa8fdc5a583",
+                "reference": "e408d9d17a811e74c51ddcb9f03d8aa8fdc5a583",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.3.2",
-                "stephpy/timeline": "*",
+                "php": "^7.1",
+                "stephpy/timeline": "^1.0",
                 "symfony/framework-bundle": "~2.0|~3.0|~4.0",
                 "symfony/options-resolver": "~2.0|~3.0|~4.0"
             },
+            "conflict": {
+                "doctrine/orm": "<2.6"
+            },
             "require-dev": {
                 "atoum/atoum": "1.*|3.*",
-                "doctrine/orm": "2.*",
+                "doctrine/orm": "^2.6",
                 "symfony/console": "~2.0|~3.0|~4.0",
                 "symfony/expression-language": "~2.0|~3.0|~4.0",
                 "symfony/twig-bundle": "~2.0|~3.0|~4.0"
@@ -3550,7 +3553,7 @@
                 "symfony",
                 "timeline"
             ],
-            "time": "2017-11-20T08:16:04+00:00"
+            "time": "2018-02-07T08:25:19+00:00"
         },
         {
             "name": "stof/doctrine-extensions-bundle",
@@ -3619,16 +3622,16 @@
         },
         {
             "name": "swiftmailer/swiftmailer",
-            "version": "v6.1.0",
+            "version": "v6.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/swiftmailer/swiftmailer.git",
-                "reference": "0ff595e1d9d7d1c929b2a5f7b774bbcfbbd81587"
+                "reference": "aa899fef280b1c1aec8d5d4ac069af7f80c89a23"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/swiftmailer/swiftmailer/zipball/0ff595e1d9d7d1c929b2a5f7b774bbcfbbd81587",
-                "reference": "0ff595e1d9d7d1c929b2a5f7b774bbcfbbd81587",
+                "url": "https://api.github.com/repos/swiftmailer/swiftmailer/zipball/aa899fef280b1c1aec8d5d4ac069af7f80c89a23",
+                "reference": "aa899fef280b1c1aec8d5d4ac069af7f80c89a23",
                 "shasum": ""
             },
             "require": {
@@ -3674,7 +3677,7 @@
                 "mail",
                 "mailer"
             ],
-            "time": "2018-07-02T20:24:38+00:00"
+            "time": "2018-07-04T11:12:44+00:00"
         },
         {
             "name": "symfony/asset",
