@@ -56,7 +56,7 @@
             "source": {
                 "type": "git",
                 "url": "/Volumes/Luke/Development/PHP/bkstg-bundles/core-bundle",
-                "reference": "465de4da3469a7f43a927a0b73eccbe21f01ac13"
+                "reference": "24c97418b2e63c02974406f311aed1a1a653a1ba"
             },
             "require": {
                 "bkstg/media-bundle": "2.0.x-dev",
@@ -97,7 +97,7 @@
                 }
             ],
             "description": "Provides the core backstage functionality and requirements.",
-            "time": "2018-07-05T10:56:41+00:00"
+            "time": "2018-07-08T11:45:19+00:00"
         },
         {
             "name": "bkstg/fos-user-bundle",
@@ -105,7 +105,7 @@
             "source": {
                 "type": "git",
                 "url": "/Volumes/Luke/Development/PHP/bkstg-bundles/fos-user-bundle",
-                "reference": "854aa0a032fbe2b8c28cef3976314f45bae08936"
+                "reference": "03633bc062ab0a9cd2e6c9cd9cc32d29fc3b7765"
             },
             "require": {
                 "bkstg/core-bundle": "2.0.x-dev",
@@ -137,7 +137,7 @@
                 }
             ],
             "description": "Provides users for the backstage using the FOS user bundle.",
-            "time": "2018-07-05T10:42:50+00:00"
+            "time": "2018-07-08T19:29:05+00:00"
         },
         {
             "name": "bkstg/media-bundle",
@@ -181,7 +181,7 @@
             "source": {
                 "type": "git",
                 "url": "/Volumes/Luke/Development/PHP/bkstg-bundles/notice-board-bundle",
-                "reference": "b80f8450d40670f13a0c3316fc3ac83576587351"
+                "reference": "4de56b15270bc134e5f0363db93b29033b968a0f"
             },
             "require": {
                 "bkstg/core-bundle": "2.0.x-dev",
@@ -208,7 +208,7 @@
                 }
             ],
             "description": "Provides the backstage notice board.",
-            "time": "2018-07-06T10:48:49+00:00"
+            "time": "2018-07-09T12:58:19+00:00"
         },
         {
             "name": "bkstg/resource-bundle",
@@ -216,7 +216,7 @@
             "source": {
                 "type": "git",
                 "url": "/Volumes/Luke/Development/PHP/bkstg-bundles/resource-bundle",
-                "reference": "9796b8f8c156951e2b20ca0a9e4e20b37baeea9d"
+                "reference": "61906d8b9ca0ceb8a7ddcddaf017bf5b038ee898"
             },
             "require": {
                 "bkstg/core-bundle": "2.0.x-dev",
@@ -243,7 +243,7 @@
                 }
             ],
             "description": "Provides the backstage resources.",
-            "time": "2018-07-04T01:00:35+00:00"
+            "time": "2018-07-09T10:19:03+00:00"
         },
         {
             "name": "bkstg/schedule-bundle",
@@ -251,7 +251,7 @@
             "source": {
                 "type": "git",
                 "url": "/Volumes/Luke/Development/PHP/bkstg-bundles/schedule-bundle",
-                "reference": "90c1ae7538300e1a5975d6368732f44df5dab3ab"
+                "reference": "0764ccc11ee698e39d856f64454d8f9baaba22c9"
             },
             "require": {
                 "bkstg/core-bundle": "2.0.x-dev",
@@ -278,7 +278,7 @@
                 }
             ],
             "description": "Provides the backstage schedule.",
-            "time": "2018-07-06T10:48:14+00:00"
+            "time": "2018-07-09T13:02:16+00:00"
         },
         {
             "name": "bkstg/timeline-bundle",
@@ -286,7 +286,7 @@
             "source": {
                 "type": "git",
                 "url": "/Volumes/Luke/Development/PHP/bkstg-bundles/timeline-bundle",
-                "reference": "0e69096cc01064613d2b8e421b983e5bbbeeb0db"
+                "reference": "4efed6c1d32c37ae56a49282031b4d25ea1f6b1f"
             },
             "require": {
                 "bkstg/core-bundle": "2.0.x-dev",
@@ -314,7 +314,7 @@
                 }
             ],
             "description": "Provides the backstage timelines.",
-            "time": "2018-07-06T10:58:24+00:00"
+            "time": "2018-07-08T19:16:12+00:00"
         },
         {
             "name": "cocur/slugify",
@@ -3063,16 +3063,16 @@
         },
         {
             "name": "sonata-project/core-bundle",
-            "version": "3.10.0",
+            "version": "3.11.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sonata-project/SonataCoreBundle.git",
-                "reference": "352275323c28f921c57312d5fb609b693a8bc8e0"
+                "reference": "08148e007c92fefc4315483eece38acade01614f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sonata-project/SonataCoreBundle/zipball/352275323c28f921c57312d5fb609b693a8bc8e0",
-                "reference": "352275323c28f921c57312d5fb609b693a8bc8e0",
+                "url": "https://api.github.com/repos/sonata-project/SonataCoreBundle/zipball/08148e007c92fefc4315483eece38acade01614f",
+                "reference": "08148e007c92fefc4315483eece38acade01614f",
                 "shasum": ""
             },
             "require": {
@@ -3136,7 +3136,7 @@
             "keywords": [
                 "sonata"
             ],
-            "time": "2018-06-13T04:16:25+00:00"
+            "time": "2018-07-07T22:27:10+00:00"
         },
         {
             "name": "sonata-project/datagrid-bundle",
@@ -3306,16 +3306,16 @@
         },
         {
             "name": "sonata-project/media-bundle",
-            "version": "3.14.0",
+            "version": "3.15.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sonata-project/SonataMediaBundle.git",
-                "reference": "35635a16729f588df01259ac7c70490c547bb21a"
+                "reference": "3e1e6656ba088f9a315073efb1c40067efbfec59"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sonata-project/SonataMediaBundle/zipball/35635a16729f588df01259ac7c70490c547bb21a",
-                "reference": "35635a16729f588df01259ac7c70490c547bb21a",
+                "url": "https://api.github.com/repos/sonata-project/SonataMediaBundle/zipball/3e1e6656ba088f9a315073efb1c40067efbfec59",
+                "reference": "3e1e6656ba088f9a315073efb1c40067efbfec59",
                 "shasum": ""
             },
             "require": {
@@ -3426,7 +3426,7 @@
                 "vimeo",
                 "youtube"
             ],
-            "time": "2018-06-26T22:19:49+00:00"
+            "time": "2018-07-06T21:03:23+00:00"
         },
         {
             "name": "stephpy/timeline",
