@@ -1,0 +1,31 @@
+# Read the documentation: https://github.com/FriendsOfSymfony/FOSElasticaBundle/blob/master/Resources/doc/setup.md
+fos_elastica:
+    clients:
+        default:
+            host: '%env(ELASTICSEARCH_HOST)%'
+            port: '%env(ELASTICSEARCH_PORT)%'
+    serializer:
+        serializer: jms_serializer
+    indexes:
+        app:
+            finder: ~
+            index_name: app_%kernel.environment%
+            types:
+                user:
+                    persistence:
+                        model: Bkstg\FOSUserBundle\Entity\User
+                production:
+                    persistence:
+                        model: Bkstg\CoreBundle\Entity\Production
+                post:
+                    persistence:
+                        model: Bkstg\NoticeBoardBundle\Entity\Post
+                resource:
+                    persistence:
+                        model: Bkstg\ResourceBundle\Entity\Resource
+                schedule:
+                    persistence:
+                        model: Bkstg\ScheduleBundle\Entity\Schedule
+                event:
+                    persistence:
+                        model: Bkstg\ScheduleBundle\Entity\Event

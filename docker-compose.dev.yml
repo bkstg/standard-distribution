@@ -9,5 +9,13 @@ services:
       - 3306:3306
     volumes:
       - dbdata:/var/lib/mysql
+  elasicsearch:
+    image: elasticsearch:2.4
+    ports:
+      - 9200:9200
+      - 9300:9300
+    volumes:
+      - esdata:/usr/share/elasticsearch/data
 volumes:
   dbdata:
+  esdata:

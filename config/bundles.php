@@ -34,4 +34,6 @@ return [
     Exercise\HTMLPurifierBundle\ExerciseHTMLPurifierBundle::class => ['all' => true],
     Spy\TimelineBundle\SpyTimelineBundle::class => ['all' => true],
     Bkstg\TimelineBundle\BkstgTimelineBundle::class => ['all' => true],
+    Bkstg\SearchBundle\BkstgSearchBundle::class => ['all' => true],
+    FOS\ElasticaBundle\FOSElasticaBundle::class => ['all' => true],
 ];
