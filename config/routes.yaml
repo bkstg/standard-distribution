@@ -15,6 +15,9 @@ bkstg_search:
 bkstg_timeline:
   prefix: /timeline
   resource: '@BkstgTimelineBundle/Resources/config/routing/all.yml'
+bkstg_notification:
+  prefix: /notification
+  resource: '@BkstgNotificationBundle/Resources/config/routing/all.yml'
 bkstg_user:
   resource: '@BkstgFOSUserBundle/Resources/config/routing/all.yml'
 bkstg_media:
