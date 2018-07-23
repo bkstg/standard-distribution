@@ -15,6 +15,7 @@ spy_timeline:
                 action_component: Bkstg\TimelineBundle\Entity\ActionComponent
     notifiers:
         - Bkstg\NotificationBundle\Notifier\ApplicationNotificationManager
+        - Bkstg\NotificationBundle\Notifier\EmailNotificationManager
     render:
         fallback: '@BkstgTimeline\Timeline\default.html.twig'
         resources:
