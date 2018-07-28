@@ -9,13 +9,12 @@ services:
       - 3306:3306
     volumes:
       - dbdata:/var/lib/mysql
-  elasicsearch:
-    image: elasticsearch:2.4
+  elasticsearch:
+    image: docker.elastic.co/elasticsearch/elasticsearch:6.3.2
     ports:
       - 9200:9200
-      - 9300:9300
     volumes:
-      - esdata:/usr/share/elasticsearch/data
+      - es6data:/usr/share/elasticsearch/data
 volumes:
   dbdata:
-  esdata:
+  es6data:

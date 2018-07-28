@@ -2,6 +2,7 @@ spy_timeline:
     filters:
         data_hydrator:
             service: spy_timeline.filter.data_hydrator
+            filter_unresolved: true
             locators:
                 - spy_timeline.filter.data_hydrator.locator.doctrine_orm
     drivers:
