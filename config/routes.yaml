@@ -9,9 +9,6 @@ fos_user_change_password:
   prefix: /profile
 
 # Bkstg routes.
-bkstg_search:
-  prefix: /search
-  resource: '@BkstgSearchBundle/Resources/config/routing.yml'
 bkstg_timeline:
   prefix: /timeline
   resource: '@BkstgTimelineBundle/Resources/config/routing/all.yml'
