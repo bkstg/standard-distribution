@@ -12,7 +12,6 @@
         "bkstg/notification-bundle": "2.0.x-dev",
         "bkstg/resource-bundle": "2.0.x-dev",
         "bkstg/schedule-bundle": "2.0.x-dev",
-        "bkstg/search-bundle": "2.0.x-dev",
         "bkstg/timeline-bundle": "2.0.x-dev",
         "symfony/console": "^4.0",
         "symfony/flex": "^1.0",

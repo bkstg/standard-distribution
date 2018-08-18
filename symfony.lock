@@ -20,9 +20,6 @@
     "bkstg/schedule-bundle": {
         "version": "2.0.x-dev"
     },
-    "bkstg/search-bundle": {
-        "version": "2.0.x-dev"
-    },
     "bkstg/timeline-bundle": {
         "version": "2.0.x-dev"
     },
@@ -86,9 +83,6 @@
     "egulias/email-validator": {
         "version": "2.1.4"
     },
-    "elasticsearch/elasticsearch": {
-        "version": "v6.0.1"
-    },
     "exercise/htmlpurifier-bundle": {
         "version": "0.2",
         "recipe": {
@@ -104,15 +98,6 @@
     "friendsofsymfony/ckeditor-bundle": {
         "version": "1.0.0"
     },
-    "friendsofsymfony/elastica-bundle": {
-        "version": "5.0",
-        "recipe": {
-            "repo": "github.com/symfony/recipes-contrib",
-            "branch": "master",
-            "version": "5.0",
-            "ref": "3f73f240ee0c3719e89f1c994ce66904e2ef84f6"
-        }
-    },
     "friendsofsymfony/user-bundle": {
         "version": "v2.1.2"
     },
@@ -121,12 +106,6 @@
     },
     "guzzlehttp/psr7": {
         "version": "1.4.2"
-    },
-    "guzzlehttp/ringphp": {
-        "version": "1.1.0"
-    },
-    "guzzlehttp/streams": {
-        "version": "3.0.0"
     },
     "imagine/imagine": {
         "version": "v0.7.1"
@@ -185,9 +164,6 @@
     "nikic/php-parser": {
         "version": "v4.0.1"
     },
-    "pagerfanta/pagerfanta": {
-        "version": "v1.1.0"
-    },
     "paragonie/random_compat": {
         "version": "v2.0.12"
     },
@@ -214,12 +190,6 @@
     },
     "psr/simple-cache": {
         "version": "1.0.1"
-    },
-    "react/promise": {
-        "version": "v2.7.0"
-    },
-    "ruflin/elastica": {
-        "version": "6.0.2"
     },
     "sonata-project/block-bundle": {
         "version": "3.12.1"
