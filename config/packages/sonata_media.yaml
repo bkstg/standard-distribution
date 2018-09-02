@@ -18,6 +18,7 @@ sonata_media:
                 small: { width: 256 , quality: 90 }
                 big: { width: 512 , quality: 90 }
                 card_banner: { width: 705, height: 370, quality: 90 }
+                full_banner: { width: 5120, quality: 90 }
     cdn:
         server:
             path: /media/serve
