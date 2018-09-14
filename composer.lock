@@ -55,12 +55,12 @@
             "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "https://github.com/bkstg/core-bundle.git",
+                "url": "https://gitlab.com/forestcitylabs/bkstg/core-bundle.git",
                 "reference": "fb73460ed6f97c3e8da553cb07984fa8de397990"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bkstg/core-bundle/zipball/fb73460ed6f97c3e8da553cb07984fa8de397990",
+                "url": "https://gitlab.com/api/v4/projects/forestcitylabs%2Fbkstg%2Fcore-bundle/repository/archive.zip?sha=fb73460ed6f97c3e8da553cb07984fa8de397990",
                 "reference": "fb73460ed6f97c3e8da553cb07984fa8de397990",
                 "shasum": ""
             },
@@ -111,12 +111,12 @@
             "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "https://github.com/bkstg/fos-user-bundle.git",
+                "url": "https://gitlab.com/forestcitylabs/bkstg/fos-user-bundle.git",
                 "reference": "bbd93a9f144a95ba4cdfe27c865ceee5f0bef5e2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bkstg/fos-user-bundle/zipball/bbd93a9f144a95ba4cdfe27c865ceee5f0bef5e2",
+                "url": "https://gitlab.com/api/v4/projects/forestcitylabs%2Fbkstg%2Ffos-user-bundle/repository/archive.zip?sha=bbd93a9f144a95ba4cdfe27c865ceee5f0bef5e2",
                 "reference": "bbd93a9f144a95ba4cdfe27c865ceee5f0bef5e2",
                 "shasum": ""
             },
@@ -158,12 +158,12 @@
             "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "https://github.com/bkstg/media-bundle.git",
+                "url": "https://gitlab.com/forestcitylabs/bkstg/media-bundle.git",
                 "reference": "2e096fffa3e0f24bafb28fa4fd7900ab519b5b70"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bkstg/media-bundle/zipball/2e096fffa3e0f24bafb28fa4fd7900ab519b5b70",
+                "url": "https://gitlab.com/api/v4/projects/forestcitylabs%2Fbkstg%2Fmedia-bundle/repository/archive.zip?sha=2e096fffa3e0f24bafb28fa4fd7900ab519b5b70",
                 "reference": "2e096fffa3e0f24bafb28fa4fd7900ab519b5b70",
                 "shasum": ""
             },
@@ -201,12 +201,12 @@
             "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "https://github.com/bkstg/notice-board-bundle.git",
+                "url": "https://gitlab.com/forestcitylabs/bkstg/notice-board-bundle.git",
                 "reference": "ec1b0cbe1e8a01dd92efdbeb08c1d2424e52c006"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bkstg/notice-board-bundle/zipball/ec1b0cbe1e8a01dd92efdbeb08c1d2424e52c006",
+                "url": "https://gitlab.com/api/v4/projects/forestcitylabs%2Fbkstg%2Fnotice-board-bundle/repository/archive.zip?sha=ec1b0cbe1e8a01dd92efdbeb08c1d2424e52c006",
                 "reference": "ec1b0cbe1e8a01dd92efdbeb08c1d2424e52c006",
                 "shasum": ""
             },
@@ -243,8 +243,14 @@
             "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "/Volumes/Luke/Development/PHP/bkstg-bundles/notification-bundle",
+                "url": "https://gitlab.com/forestcitylabs/bkstg/notification-bundle.git",
                 "reference": "052d316e5e6aff50afeed8f2c2311011586b14f2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://gitlab.com/api/v4/projects/forestcitylabs%2Fbkstg%2Fnotification-bundle/repository/archive.zip?sha=052d316e5e6aff50afeed8f2c2311011586b14f2",
+                "reference": "052d316e5e6aff50afeed8f2c2311011586b14f2",
+                "shasum": ""
             },
             "require": {
                 "bkstg/timeline-bundle": "2.0.x-dev",
@@ -264,6 +270,7 @@
                     "Bkstg\\NotificationBundle\\": ""
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -281,12 +288,12 @@
             "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "https://github.com/bkstg/resource-bundle.git",
+                "url": "https://gitlab.com/forestcitylabs/bkstg/resource-bundle.git",
                 "reference": "27a8d51edb2993ad35e88f05c158b27f34d8b7bf"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bkstg/resource-bundle/zipball/27a8d51edb2993ad35e88f05c158b27f34d8b7bf",
+                "url": "https://gitlab.com/api/v4/projects/forestcitylabs%2Fbkstg%2Fresource-bundle/repository/archive.zip?sha=27a8d51edb2993ad35e88f05c158b27f34d8b7bf",
                 "reference": "27a8d51edb2993ad35e88f05c158b27f34d8b7bf",
                 "shasum": ""
             },
@@ -323,12 +330,12 @@
             "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "https://github.com/bkstg/schedule-bundle.git",
+                "url": "https://gitlab.com/forestcitylabs/bkstg/schedule-bundle.git",
                 "reference": "59773bcfe33e4cd7dfc152e05fbbe81d24c81314"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bkstg/schedule-bundle/zipball/59773bcfe33e4cd7dfc152e05fbbe81d24c81314",
+                "url": "https://gitlab.com/api/v4/projects/forestcitylabs%2Fbkstg%2Fschedule-bundle/repository/archive.zip?sha=59773bcfe33e4cd7dfc152e05fbbe81d24c81314",
                 "reference": "59773bcfe33e4cd7dfc152e05fbbe81d24c81314",
                 "shasum": ""
             },
@@ -365,12 +372,12 @@
             "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "https://github.com/bkstg/timeline-bundle.git",
+                "url": "https://gitlab.com/forestcitylabs/bkstg/timeline-bundle.git",
                 "reference": "a35f358285a4638e6efba21ad02b65cd9c431efc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bkstg/timeline-bundle/zipball/a35f358285a4638e6efba21ad02b65cd9c431efc",
+                "url": "https://gitlab.com/api/v4/projects/forestcitylabs%2Fbkstg%2Ftimeline-bundle/repository/archive.zip?sha=a35f358285a4638e6efba21ad02b65cd9c431efc",
                 "reference": "a35f358285a4638e6efba21ad02b65cd9c431efc",
                 "shasum": ""
             },
