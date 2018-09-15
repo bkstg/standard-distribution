@@ -1,7 +1,0 @@
-{
-  "scripts": {
-    "dokku": {
-      "postdeploy": "php bin/console doctrine:schema:create"
-    }
-  }
-}
