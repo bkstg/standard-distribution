@@ -1,6 +1,7 @@
 image: docker:stable
 
 stages:
+  - install
   - compile
   - build
 
@@ -11,6 +12,22 @@ variables:
   CONTAINER_IMAGE: registry.gitlab.com/$CI_PROJECT_PATH
   DOCKER_HOST: tcp://docker:2375
   DOCKER_DRIVER: overlay2
+
+# Install composer dependencies for production.
+composer install:
+  image: composer:1
+  stage: install
+  script:
+    - composer install --ignore-platform-reqs --no-scripts --no-progress --no-dev
+  artifacts:
+    paths:
+      - vendor/
+    expire_in: 1 week
+  cache:
+    paths:
+      - vendor/
+  only:
+    - master
 
 # Build theme assets for production.
 compile assets:
@@ -26,22 +43,6 @@ compile assets:
   cache:
     paths:
       - node_modules/
-  only:
-    - master
-
-# Install composer dependencies for production.
-composer install:
-  image: composer:1
-  stage: compile
-  script:
-    - composer install --ignore-platform-reqs --no-scripts --no-progress --no-dev
-  artifacts:
-    paths:
-      - vendor/
-    expire_in: 1 week
-  cache:
-    paths:
-      - vendor/
   only:
     - master
 
