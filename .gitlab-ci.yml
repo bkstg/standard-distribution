@@ -34,7 +34,7 @@ composer install:
   image: composer:1
   stage: compile
   script:
-    - composer install --no-scripts --no-progress --no-dev
+    - composer install --ignore-platform-reqs --no-scripts --no-progress --no-dev
   artifacts:
     paths:
       - vendor/
