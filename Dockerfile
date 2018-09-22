@@ -15,25 +15,23 @@ RUN apk add \
     php7-xml \
     php7-simplexml \
     php7-tokenizer \
+    php7-fileinfo \
     php7-dom \
     php7-apache2
 
 # Make directories to avoid errors.
-RUN mkdir /run/apache2 && \
-    mkdir /var/log/php
-
-# Log everything to standard outs for docker.
-RUN ln -sf /dev/stdout /var/log/apache2/access.log && \
-    ln -sf /dev/stderr /var/log/apache2/error.log && \
-    ln -sf /dev/stderr /var/log/php/error.log
+RUN mkdir /run/apache2
 
 # Create application and add config.
 COPY . /var/www/html
 COPY ./config/docker/apache2/apache.conf /etc/apache2/conf.d/app.conf
 COPY ./config/docker/php/php.ini /etc/php/conf.d/99-app.ini
 
-WORKDIR /var/www/html
+# Set user and group for files and execution.
+RUN chown -R apache:apache /var/www/html/var
+RUN chown -R apache:apache /var/www/html/public
 
+WORKDIR /var/www/html
 CMD ["httpd", "-DFOREGROUND"]
 
 EXPOSE 80
