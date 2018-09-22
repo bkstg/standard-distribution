@@ -10,11 +10,14 @@ stages:
 composer install:
   image: composer:1
   stage: install
+  variables:
+    APP_ENV: prod
   script:
-    - composer install --ignore-platform-reqs --no-scripts --no-progress --no-dev
+    - composer install --no-progress --no-dev
   artifacts:
     paths:
       - vendor/
+      - public/bundles/
     expire_in: 1 week
   cache:
     paths:

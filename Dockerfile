@@ -2,6 +2,7 @@ FROM alpine:3.8
 
 RUN apk update && apk upgrade
 RUN apk add \
+    sudo \
     php7 \
     apache2 \
     php7-pdo \
@@ -16,11 +17,16 @@ RUN apk add \
     php7-simplexml \
     php7-tokenizer \
     php7-fileinfo \
+    php7-zip \
     php7-dom \
     php7-apache2
 
-# Make directories to avoid errors.
+# Make directory to avoid errors.
 RUN mkdir /run/apache2
+
+# Create a small shell script for executing console commands.
+RUN echo -e "#!/bin/ash\n\nsudo -E -u apache php bin/console \"\$@\"" > /usr/local/bin/console
+RUN chmod u+x /usr/local/bin/console
 
 # Create application and add config.
 COPY . /var/www/html
