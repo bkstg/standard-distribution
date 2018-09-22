@@ -34,7 +34,6 @@ COPY ./config/docker/apache2/apache.conf /etc/apache2/conf.d/app.conf
 COPY ./config/docker/php/php.ini /etc/php/conf.d/99-app.ini
 
 # Set user and group for files and execution.
-RUN chown -R apache:apache /var/www/html/var
 RUN chown -R apache:apache /var/www/html/public
 
 WORKDIR /var/www/html
