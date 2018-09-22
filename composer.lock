@@ -56,12 +56,12 @@
             "source": {
                 "type": "git",
                 "url": "https://gitlab.com/forestcitylabs/bkstg/core-bundle.git",
-                "reference": "fb73460ed6f97c3e8da553cb07984fa8de397990"
+                "reference": "468f87b4473fc2553665f700787b1c9bbbc84f83"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://gitlab.com/api/v4/projects/forestcitylabs%2Fbkstg%2Fcore-bundle/repository/archive.zip?sha=fb73460ed6f97c3e8da553cb07984fa8de397990",
-                "reference": "fb73460ed6f97c3e8da553cb07984fa8de397990",
+                "url": "https://gitlab.com/api/v4/projects/forestcitylabs%2Fbkstg%2Fcore-bundle/repository/archive.zip?sha=468f87b4473fc2553665f700787b1c9bbbc84f83",
+                "reference": "468f87b4473fc2553665f700787b1c9bbbc84f83",
                 "shasum": ""
             },
             "require": {
@@ -104,7 +104,7 @@
                 }
             ],
             "description": "Provides the core backstage functionality and requirements.",
-            "time": "2018-09-03T14:41:48+00:00"
+            "time": "2018-09-22T13:46:19+00:00"
         },
         {
             "name": "bkstg/fos-user-bundle",
