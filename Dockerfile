@@ -32,8 +32,8 @@ RUN chmod u+x /usr/local/bin/console
 
 # Create application and add config.
 COPY . /var/www/html
-COPY ./config/docker/apache2/apache.conf /etc/apache2/conf.d/app.conf
-COPY ./config/docker/php/php.ini /etc/php/conf.d/99-app.ini
+COPY ./config/docker/apache/apache.conf /etc/apache2/conf.d/app.conf
+COPY ./config/docker/php/php.ini /etc/php7/conf.d/99-app.ini
 
 # Set user and group for files and execution.
 RUN mkdir /var/www/html/var
