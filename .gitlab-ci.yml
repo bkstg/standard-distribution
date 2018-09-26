@@ -5,7 +5,6 @@ stages:
   - compile
   - build
 
-
 # Install composer dependencies for production.
 composer install:
   image: composer:1
@@ -23,7 +22,7 @@ composer install:
     paths:
       - vendor/
   only:
-    - master
+    - tags
 
 # Build theme assets for production.
 compile assets:
@@ -40,7 +39,7 @@ compile assets:
     paths:
       - node_modules/
   only:
-    - master
+    - tags
 
 build docker:
   stage: build
@@ -57,4 +56,4 @@ build docker:
     - docker push $CONTAINER_IMAGE:$CI_BUILD_REF
     - docker push $CONTAINER_IMAGE:latest
   only:
-    - master
+    - tags
