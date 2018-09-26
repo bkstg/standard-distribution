@@ -5,7 +5,8 @@
     "dev-server": "encore dev-server",
     "dev": "encore dev",
     "watch": "encore dev --watch",
-    "build": "encore production"
+    "build": "encore production",
+    "test": "echo \"Heck yeah!\""
   },
   "devDependencies": {
     "@symfony/webpack-encore": "^0.20.0",
