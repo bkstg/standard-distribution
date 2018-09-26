@@ -1,0 +1,60 @@
+image: docker:stable
+
+stages:
+  - install
+  - compile
+  - build
+
+
+# Install composer dependencies for production.
+composer install:
+  image: composer:1
+  stage: install
+  variables:
+    APP_ENV: prod
+  script:
+    - composer install --no-progress --no-dev
+  artifacts:
+    paths:
+      - vendor/
+      - public/bundles/
+    expire_in: 1 week
+  cache:
+    paths:
+      - vendor/
+  only:
+    - master
+
+# Build theme assets for production.
+compile assets:
+  image: node:7
+  stage: compile
+  script:
+    - npm install --quiet
+    - ./node_modules/.bin/encore production
+  artifacts:
+    paths:
+      - public/build/
+    expire_in: 1 week
+  cache:
+    paths:
+      - node_modules/
+  only:
+    - master
+
+build docker:
+  stage: build
+  services:
+    - docker:dind
+  variables:
+    CONTAINER_IMAGE: registry.gitlab.com/$CI_PROJECT_PATH
+    DOCKER_HOST: tcp://docker:2375
+    DOCKER_DRIVER: overlay2
+  script:
+    - docker login -u gitlab-ci-token -p $CI_JOB_TOKEN registry.gitlab.com
+    - docker pull $CONTAINER_IMAGE:latest || true
+    - docker build --cache-from $CONTAINER_IMAGE:latest --tag $CONTAINER_IMAGE:$CI_BUILD_REF --tag $CONTAINER_IMAGE:latest .
+    - docker push $CONTAINER_IMAGE:$CI_BUILD_REF
+    - docker push $CONTAINER_IMAGE:latest
+  only:
+    - master
