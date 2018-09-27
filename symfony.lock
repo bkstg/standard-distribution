@@ -206,6 +206,9 @@
     "psr/simple-cache": {
         "version": "1.0.1"
     },
+    "sentry/sentry": {
+        "version": "1.9.2"
+    },
     "sonata-project/block-bundle": {
         "version": "3.12.1"
     },
