@@ -17,6 +17,7 @@ RUN apk add \
     php7-simplexml \
     php7-tokenizer \
     php7-fileinfo \
+    php7-redis \
     php7-zip \
     php7-dom \
     php7-apache2
