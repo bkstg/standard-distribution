@@ -8,8 +8,8 @@ monolog:
                 # regex: exclude all 404 errors from the logs
                 - ^/
         nested:
-            type: stream
-            path: "%kernel.logs_dir%/%kernel.environment%.log"
+            type: raven
+            dsn: '%env(SENTRY_DSN)%'
             level: info
         console:
             type:   console
