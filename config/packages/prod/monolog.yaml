@@ -1,3 +1,5 @@
+parameters:
+    env(SENTRY_DSN): ''
 monolog:
     handlers:
         main:
@@ -9,7 +11,7 @@ monolog:
                 - ^/
         nested:
             type: raven
-            dsn: '%env(SENTRY_DSN)%'
+            dsn: '%env(resolve:SENTRY_DSN)%'
             level: info
         console:
             type:   console

@@ -1,3 +1,5 @@
+parameters:
+    env(REDIS_DSN): ''
 framework:
     cache:
         app: cache.adapter.redis
