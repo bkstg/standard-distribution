@@ -107,6 +107,9 @@
     "ezyang/htmlpurifier": {
         "version": "v4.10.0"
     },
+    "facebook/webdriver": {
+        "version": "1.6.0"
+    },
     "friendsofsymfony/ckeditor-bundle": {
         "version": "1.0.0"
     },
@@ -388,6 +391,9 @@
     },
     "symfony/options-resolver": {
         "version": "v4.0.9"
+    },
+    "symfony/panther": {
+        "version": "v0.2.0"
     },
     "symfony/phpunit-bridge": {
         "version": "4.1",
