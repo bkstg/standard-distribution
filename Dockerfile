@@ -5,6 +5,7 @@ RUN apk add \
     sudo \
     php7 \
     apache2 \
+    php7-curl \
     php7-pdo \
     php7-pdo_mysql \
     php7-opcache \
