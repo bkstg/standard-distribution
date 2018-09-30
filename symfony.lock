@@ -1,4 +1,7 @@
 {
+    "aws/aws-sdk-php": {
+        "version": "3.67.22"
+    },
     "behat/transliterator": {
         "version": "v1.2.0"
     },
@@ -119,6 +122,12 @@
     "gedmo/doctrine-extensions": {
         "version": "v2.4.35"
     },
+    "guzzlehttp/guzzle": {
+        "version": "6.3.3"
+    },
+    "guzzlehttp/promises": {
+        "version": "v1.3.1"
+    },
     "guzzlehttp/psr7": {
         "version": "1.4.2"
     },
@@ -178,6 +187,9 @@
     },
     "monolog/monolog": {
         "version": "1.23.0"
+    },
+    "mtdowling/jmespath.php": {
+        "version": "2.4.0"
     },
     "nikic/php-parser": {
         "version": "v4.0.1"

@@ -5,6 +5,7 @@
     "prefer-stable": true,
     "require": {
         "php": "^7.1.3",
+        "aws/aws-sdk-php": "^3.67",
         "bkstg/core-bundle": "2.0.x-dev",
         "bkstg/fos-user-bundle": "2.0.x-dev",
         "bkstg/notice-board-bundle": "2.0.x-dev",
