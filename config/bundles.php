@@ -35,4 +35,5 @@ return [
     Exercise\HTMLPurifierBundle\ExerciseHTMLPurifierBundle::class => ['all' => true],
     Spy\TimelineBundle\SpyTimelineBundle::class => ['all' => true],
     Bkstg\TimelineBundle\BkstgTimelineBundle::class => ['all' => true],
+    Doctrine\Bundle\MigrationsBundle\DoctrineMigrationsBundle::class => ['all' => true],
 ];
