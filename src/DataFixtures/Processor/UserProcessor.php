@@ -10,6 +10,11 @@ final class UserProcessor implements ProcessorInterface
 {
     private $user_manager;
 
+    /**
+     * Create a new user processor.
+     *
+     * @param UserManagerInterface $user_manager The user manager service.
+     */
     public function __construct(UserManagerInterface $user_manager)
     {
         $this->user_manager = $user_manager;
@@ -17,6 +22,11 @@ final class UserProcessor implements ProcessorInterface
 
     /**
      * {@inheritdoc}
+     *
+     * @param string $id     The id of the object.
+     * @param mixed  $object The object to modify.
+     *
+     * @return void
      */
     public function preProcess(string $id, $object): void
     {
@@ -30,6 +40,11 @@ final class UserProcessor implements ProcessorInterface
 
     /**
      * {@inheritdoc}
+     *
+     * @param string $id     The id of the object to process.
+     * @param mixed  $object The object to modify.
+     *
+     * @return void
      */
     public function postProcess(string $id, $object): void
     {
