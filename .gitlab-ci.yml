@@ -42,7 +42,7 @@ compile assets:
 
 # Test coding standards.
 coding standards:
-    image: initlab/phpcs
+    image: registry.gitlab.com/forestcitylabs/ops/phpcs:latest
     stage: test
     script:
         - phpcs --standard=phpcs.xml src/
