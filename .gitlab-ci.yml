@@ -45,7 +45,7 @@ coding standards:
     image: initlab/phpcs
     stage: test
     script:
-        - phpcs src/
+        - phpcs --standard=phpcs.xml src/
 
 # Build the new production docker image.
 build docker:
