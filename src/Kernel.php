@@ -15,16 +15,31 @@ class Kernel extends BaseKernel
 
     const CONFIG_EXTS = '.{php,xml,yaml,yml}';
 
+    /**
+     * Returns the cache directory for this kernel.
+     *
+     * @return string
+     */
     public function getCacheDir()
     {
         return $this->getProjectDir().'/var/cache/'.$this->environment;
     }
 
+    /**
+     * Returns the log directory for this kernel.
+     *
+     * @return string
+     */
     public function getLogDir()
     {
         return $this->getProjectDir().'/var/log';
     }
 
+    /**
+     * Registers bundles for this kernel and environment.
+     *
+     * @return array
+     */
     public function registerBundles()
     {
         $contents = require $this->getProjectDir().'/config/bundles.php';
@@ -35,6 +50,13 @@ class Kernel extends BaseKernel
         }
     }
 
+    /**
+     * Configure the container for this kernel.
+     *
+     * @param  ContainerBuilder $container The container.
+     * @param  LoaderInterface  $loader    The loader for this kernel.
+     * @return void
+     */
     protected function configureContainer(ContainerBuilder $container, LoaderInterface $loader)
     {
         $container->addResource(new FileResource($this->getProjectDir().'/config/bundles.php'));
@@ -50,6 +72,12 @@ class Kernel extends BaseKernel
         $loader->load($confDir.'/{services}_'.$this->environment.self::CONFIG_EXTS, 'glob');
     }
 
+    /**
+     * Configure the routes for this kernel.
+     *
+     * @param  RouteCollectionBuilder $routes The route collection.
+     * @return void
+     */
     protected function configureRoutes(RouteCollectionBuilder $routes)
     {
         $confDir = $this->getProjectDir().'/config';
