@@ -40,6 +40,13 @@ compile assets:
     only:
         - tags
 
+# Test security vulnerabilities.
+security check:
+    image: registry.gitlab.com/forestcitylabs/ops/security-checker:latest
+    stage: test
+    script:
+        - security-checker security:check ./composer.lock
+
 # Test coding standards.
 coding standards:
     image: registry.gitlab.com/forestcitylabs/ops/phpcs:latest
