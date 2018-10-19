@@ -8,16 +8,16 @@
     "packages": [
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.68.1",
+            "version": "3.69.10",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "2986beb07a14bcde94608e940ee7e5cba1ed4e38"
+                "reference": "ec24754778d1223e0728d16783b0ee31efc55dce"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/2986beb07a14bcde94608e940ee7e5cba1ed4e38",
-                "reference": "2986beb07a14bcde94608e940ee7e5cba1ed4e38",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/ec24754778d1223e0728d16783b0ee31efc55dce",
+                "reference": "ec24754778d1223e0728d16783b0ee31efc55dce",
                 "shasum": ""
             },
             "require": {
@@ -38,6 +38,8 @@
                 "doctrine/cache": "~1.4",
                 "ext-dom": "*",
                 "ext-openssl": "*",
+                "ext-pcntl": "*",
+                "ext-sockets": "*",
                 "nette/neon": "^2.3",
                 "phpunit/phpunit": "^4.8.35|^5.4.3",
                 "psr/cache": "^1.0"
@@ -46,7 +48,8 @@
                 "aws/aws-php-sns-message-validator": "To validate incoming SNS notifications",
                 "doctrine/cache": "To use the DoctrineCacheAdapter",
                 "ext-curl": "To send requests using cURL",
-                "ext-openssl": "Allows working with CloudFront private distributions and verifying received SNS messages"
+                "ext-openssl": "Allows working with CloudFront private distributions and verifying received SNS messages",
+                "ext-sockets": "To use client-side monitoring"
             },
             "type": "library",
             "extra": {
@@ -84,7 +87,7 @@
                 "s3",
                 "sdk"
             ],
-            "time": "2018-10-02T21:11:29+00:00"
+            "time": "2018-10-18T20:39:29+00:00"
         },
         {
             "name": "behat/transliterator",
@@ -136,16 +139,15 @@
             "source": {
                 "type": "git",
                 "url": "https://gitlab.com/forestcitylabs/bkstg/core-bundle.git",
-                "reference": "468f87b4473fc2553665f700787b1c9bbbc84f83"
+                "reference": "961812ec04f5901a6bb8da157d9153b3aece966f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://gitlab.com/api/v4/projects/forestcitylabs%2Fbkstg%2Fcore-bundle/repository/archive.zip?sha=468f87b4473fc2553665f700787b1c9bbbc84f83",
-                "reference": "468f87b4473fc2553665f700787b1c9bbbc84f83",
+                "url": "https://gitlab.com/api/v4/projects/forestcitylabs%2Fbkstg%2Fcore-bundle/repository/archive.zip?sha=961812ec04f5901a6bb8da157d9153b3aece966f",
+                "reference": "961812ec04f5901a6bb8da157d9153b3aece966f",
                 "shasum": ""
             },
             "require": {
-                "bkstg/media-bundle": "2.0.x-dev",
                 "doctrine/doctrine-bundle": "^1.9",
                 "doctrine/orm": "^2.5",
                 "exercise/htmlpurifier-bundle": "^1.0",
@@ -155,12 +157,17 @@
                 "midnightluke/group-security-bundle": "^1.0@dev",
                 "php": "^7.1",
                 "sonata-project/block-bundle": "^3.3",
+                "sonata-project/media-bundle": "^3.6",
                 "stof/doctrine-extensions-bundle": "^1.2",
                 "symfony/framework-bundle": "^3.3||^4.0",
                 "symfony/security-bundle": "^3.3||^4.0",
                 "symfony/translation": "^4.0",
                 "symfony/twig-bundle": "^3.3||^4.0",
                 "twig/extensions": "^1.5"
+            },
+            "require-dev": {
+                "kint-php/kint": "^3.0",
+                "phpunit/phpunit": "^7.4"
             },
             "type": "symfony-bundle",
             "extra": {
@@ -171,7 +178,10 @@
             "autoload": {
                 "psr-4": {
                     "Bkstg\\CoreBundle\\": ""
-                }
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
@@ -184,7 +194,7 @@
                 }
             ],
             "description": "Provides the core backstage functionality and requirements.",
-            "time": "2018-09-22T13:46:19+00:00"
+            "time": "2018-10-19T18:00:41+00:00"
         },
         {
             "name": "bkstg/fos-user-bundle",
@@ -192,12 +202,12 @@
             "source": {
                 "type": "git",
                 "url": "https://gitlab.com/forestcitylabs/bkstg/fos-user-bundle.git",
-                "reference": "bbd93a9f144a95ba4cdfe27c865ceee5f0bef5e2"
+                "reference": "eae53f23309bc09ac06043e1615c691142304a99"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://gitlab.com/api/v4/projects/forestcitylabs%2Fbkstg%2Ffos-user-bundle/repository/archive.zip?sha=bbd93a9f144a95ba4cdfe27c865ceee5f0bef5e2",
-                "reference": "bbd93a9f144a95ba4cdfe27c865ceee5f0bef5e2",
+                "url": "https://gitlab.com/api/v4/projects/forestcitylabs%2Fbkstg%2Ffos-user-bundle/repository/archive.zip?sha=eae53f23309bc09ac06043e1615c691142304a99",
+                "reference": "eae53f23309bc09ac06043e1615c691142304a99",
                 "shasum": ""
             },
             "require": {
@@ -231,50 +241,7 @@
                 }
             ],
             "description": "Provides users for the backstage using the FOS user bundle.",
-            "time": "2018-09-02T12:13:25+00:00"
-        },
-        {
-            "name": "bkstg/media-bundle",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://gitlab.com/forestcitylabs/bkstg/media-bundle.git",
-                "reference": "811560c604e9d758b2019b5125855414172dc0c7"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://gitlab.com/api/v4/projects/forestcitylabs%2Fbkstg%2Fmedia-bundle/repository/archive.zip?sha=811560c604e9d758b2019b5125855414172dc0c7",
-                "reference": "811560c604e9d758b2019b5125855414172dc0c7",
-                "shasum": ""
-            },
-            "require": {
-                "bkstg/core-bundle": "^2.0||2.0.x-dev",
-                "php": "^7.0",
-                "sonata-project/media-bundle": "^3.6"
-            },
-            "type": "symfony-bundle",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "2.0.x-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Bkstg\\MediaBundle\\": ""
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Luke Bainbridge",
-                    "email": "luke.bainbridge@gmail.com"
-                }
-            ],
-            "description": "Provides the media backstage functionality and requirements.",
-            "time": "2018-09-30T13:25:43+00:00"
+            "time": "2018-10-19T17:23:06+00:00"
         },
         {
             "name": "bkstg/notice-board-bundle",
@@ -369,12 +336,12 @@
             "source": {
                 "type": "git",
                 "url": "https://gitlab.com/forestcitylabs/bkstg/resource-bundle.git",
-                "reference": "27a8d51edb2993ad35e88f05c158b27f34d8b7bf"
+                "reference": "05c765a709d35ead33488270629a76b97cc2685d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://gitlab.com/api/v4/projects/forestcitylabs%2Fbkstg%2Fresource-bundle/repository/archive.zip?sha=27a8d51edb2993ad35e88f05c158b27f34d8b7bf",
-                "reference": "27a8d51edb2993ad35e88f05c158b27f34d8b7bf",
+                "url": "https://gitlab.com/api/v4/projects/forestcitylabs%2Fbkstg%2Fresource-bundle/repository/archive.zip?sha=05c765a709d35ead33488270629a76b97cc2685d",
+                "reference": "05c765a709d35ead33488270629a76b97cc2685d",
                 "shasum": ""
             },
             "require": {
@@ -403,7 +370,7 @@
                 }
             ],
             "description": "Provides the backstage resources.",
-            "time": "2018-08-18T12:06:35+00:00"
+            "time": "2018-10-19T17:26:16+00:00"
         },
         {
             "name": "bkstg/schedule-bundle",
@@ -1876,21 +1843,22 @@
         },
         {
             "name": "friendsofsymfony/ckeditor-bundle",
-            "version": "1.1.0",
+            "version": "1.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/FriendsOfSymfony/FOSCKEditorBundle.git",
-                "reference": "8f021fd3f2728f2b4286fdd7ca5f7e4d24c3c828"
+                "reference": "7d428b16154a7136e1dd4c11062573afa1bfb3df"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/FriendsOfSymfony/FOSCKEditorBundle/zipball/8f021fd3f2728f2b4286fdd7ca5f7e4d24c3c828",
-                "reference": "8f021fd3f2728f2b4286fdd7ca5f7e4d24c3c828",
+                "url": "https://api.github.com/repos/FriendsOfSymfony/FOSCKEditorBundle/zipball/7d428b16154a7136e1dd4c11062573afa1bfb3df",
+                "reference": "7d428b16154a7136e1dd4c11062573afa1bfb3df",
                 "shasum": ""
             },
             "require": {
                 "ext-zip": "*",
                 "php": "^5.6 || ^7.0",
+                "symfony/asset": "^2.7 || ^3.0 || ^4.0",
                 "symfony/config": "^2.7 || ^3.0 || ^4.0",
                 "symfony/dependency-injection": "^2.7 || ^3.0 || ^4.0",
                 "symfony/expression-language": "^2.7 || ^3.0 || ^4.0",
@@ -1912,7 +1880,6 @@
                 "matthiasnoback/symfony-dependency-injection-test": "^1.0 || ^2.0",
                 "phpunit/phpunit": "^5.0 || ^6.0",
                 "sensio/distribution-bundle": "^3.0.12 || ^4.0 || ^5.0",
-                "symfony/asset": "^2.7 || ^3.0 || ^4.0",
                 "symfony/console": "^2.7 || ^3.0 || ^4.0",
                 "symfony/phpunit-bridge": "^4.0",
                 "symfony/templating": "^2.7 || ^3.0 || ^4.0",
@@ -1952,7 +1919,7 @@
             "keywords": [
                 "CKEditor"
             ],
-            "time": "2018-05-25T18:07:58+00:00"
+            "time": "2018-10-03T20:51:58+00:00"
         },
         {
             "name": "friendsofsymfony/user-bundle",
@@ -2646,16 +2613,16 @@
         },
         {
             "name": "knplabs/gaufrette",
-            "version": "v0.6.0",
+            "version": "v0.7.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/KnpLabs/Gaufrette.git",
-                "reference": "a7c71edef4528d9881f534515f9061660255afe3"
+                "reference": "a0627e91e8753f442eea6560cb347151cd306b2c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/KnpLabs/Gaufrette/zipball/a7c71edef4528d9881f534515f9061660255afe3",
-                "reference": "a7c71edef4528d9881f534515f9061660255afe3",
+                "url": "https://api.github.com/repos/KnpLabs/Gaufrette/zipball/a0627e91e8753f442eea6560cb347151cd306b2c",
+                "reference": "a0627e91e8753f442eea6560cb347151cd306b2c",
                 "shasum": ""
             },
             "require": {
@@ -2731,7 +2698,7 @@
                 "filesystem",
                 "media"
             ],
-            "time": "2018-03-26T12:19:49+00:00"
+            "time": "2018-08-30T13:26:15+00:00"
         },
         {
             "name": "knplabs/knp-components",
@@ -4115,26 +4082,28 @@
         },
         {
             "name": "sonata-project/datagrid-bundle",
-            "version": "2.3.1",
+            "version": "2.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sonata-project/SonataDatagridBundle.git",
-                "reference": "4e53da7f3a027eee10f1f2bf37237b2b7cffaa71"
+                "reference": "aa0923768b705dbdab6b751f667a03ba6c5fd05a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sonata-project/SonataDatagridBundle/zipball/4e53da7f3a027eee10f1f2bf37237b2b7cffaa71",
-                "reference": "4e53da7f3a027eee10f1f2bf37237b2b7cffaa71",
+                "url": "https://api.github.com/repos/sonata-project/SonataDatagridBundle/zipball/aa0923768b705dbdab6b751f667a03ba6c5fd05a",
+                "reference": "aa0923768b705dbdab6b751f667a03ba6c5fd05a",
                 "shasum": ""
             },
             "require": {
                 "php": "^5.6 || ^7.0",
+                "symfony/config": "^2.8 || ^3.2 || ^4.0",
                 "symfony/dependency-injection": "^2.8 || ^3.2 || ^4.0",
-                "symfony/form": "^2.8 || ^3.2 || ^4.0"
+                "symfony/form": "^2.8 || ^3.2 || ^4.0",
+                "symfony/http-kernel": "^2.8 || ^3.2 || ^4.0"
             },
             "require-dev": {
                 "doctrine/orm": "^2.4",
-                "symfony/phpunit-bridge": "^3.3"
+                "symfony/phpunit-bridge": "^4.0"
             },
             "type": "symfony-bundle",
             "extra": {
@@ -4168,7 +4137,7 @@
                 "datagrid",
                 "sonata"
             ],
-            "time": "2017-12-12T17:04:29+00:00"
+            "time": "2018-10-09T20:50:18+00:00"
         },
         {
             "name": "sonata-project/doctrine-extensions",
@@ -4300,23 +4269,23 @@
         },
         {
             "name": "sonata-project/media-bundle",
-            "version": "3.16.1",
+            "version": "3.16.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sonata-project/SonataMediaBundle.git",
-                "reference": "2b52cb00a0391c056905e54e351875011a70e901"
+                "reference": "94f02da09ad804a881e64093f83cfb7da60d1796"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sonata-project/SonataMediaBundle/zipball/2b52cb00a0391c056905e54e351875011a70e901",
-                "reference": "2b52cb00a0391c056905e54e351875011a70e901",
+                "url": "https://api.github.com/repos/sonata-project/SonataMediaBundle/zipball/94f02da09ad804a881e64093f83cfb7da60d1796",
+                "reference": "94f02da09ad804a881e64093f83cfb7da60d1796",
                 "shasum": ""
             },
             "require": {
                 "guzzlehttp/psr7": "^1.0",
                 "imagine/imagine": "^0.6 || ^0.7",
                 "jms/serializer-bundle": "^1.0 || ^2.0",
-                "knplabs/gaufrette": "^0.3 || ^0.4 || ^0.5 || ^0.6",
+                "knplabs/gaufrette": "^0.3 || ^0.4 || ^0.5 || ^0.6 || ^0.7",
                 "kriswallsmith/buzz": "^0.15 || ^0.16",
                 "php": "^5.6 || ^7.0",
                 "psr/log": "^1.0",
@@ -4350,7 +4319,7 @@
                 "liip/imagine-bundle": "<1.9",
                 "sonata-project/block-bundle": "<3.11 || >=4.0",
                 "sonata-project/classification-bundle": "<3.0 || >= 5.0",
-                "sonata-project/formatter-bundle": "<3.2 || >= 4.0",
+                "sonata-project/formatter-bundle": "<3.4",
                 "sonata-project/notification-bundle": "<3.3",
                 "sonata-project/seo-bundle": "<2.1 || >=3.0",
                 "symfony/monolog-bundle": "<2.4"
@@ -4366,7 +4335,7 @@
                 "sonata-project/block-bundle": "^3.11",
                 "sonata-project/datagrid-bundle": "^2.3",
                 "sonata-project/doctrine-orm-admin-bundle": "^3.4",
-                "sonata-project/formatter-bundle": "^3.4",
+                "sonata-project/formatter-bundle": "^3.4 || ^4.0",
                 "sonata-project/notification-bundle": "^3.3",
                 "sonata-project/seo-bundle": "^2.5",
                 "symfony/phpunit-bridge": "^4.0",
@@ -4420,7 +4389,7 @@
                 "vimeo",
                 "youtube"
             ],
-            "time": "2018-10-03T06:42:27+00:00"
+            "time": "2018-10-17T08:32:31+00:00"
         },
         {
             "name": "stephpy/timeline",
@@ -7786,16 +7755,16 @@
         },
         {
             "name": "nikic/php-parser",
-            "version": "v4.0.4",
+            "version": "v4.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nikic/PHP-Parser.git",
-                "reference": "fa6ee28600d21d49b2b4e1006b48426cec8e579c"
+                "reference": "d0230c5c77a7e3cfa69446febf340978540958c0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nikic/PHP-Parser/zipball/fa6ee28600d21d49b2b4e1006b48426cec8e579c",
-                "reference": "fa6ee28600d21d49b2b4e1006b48426cec8e579c",
+                "url": "https://api.github.com/repos/nikic/PHP-Parser/zipball/d0230c5c77a7e3cfa69446febf340978540958c0",
+                "reference": "d0230c5c77a7e3cfa69446febf340978540958c0",
                 "shasum": ""
             },
             "require": {
@@ -7811,7 +7780,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "4.0-dev"
+                    "dev-master": "4.1-dev"
                 }
             },
             "autoload": {
@@ -7833,7 +7802,7 @@
                 "parser",
                 "php"
             ],
-            "time": "2018-09-18T07:03:24+00:00"
+            "time": "2018-10-10T09:24:14+00:00"
         },
         {
             "name": "sebastian/comparator",
@@ -8396,16 +8365,16 @@
         },
         {
             "name": "symfony/maker-bundle",
-            "version": "v1.7.0",
+            "version": "v1.8.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/maker-bundle.git",
-                "reference": "22a9bf33868f0fed6cab013fe5231e8485d15e20"
+                "reference": "26643943fe19b5b47d620744907f09d1d6b3f06f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/maker-bundle/zipball/22a9bf33868f0fed6cab013fe5231e8485d15e20",
-                "reference": "22a9bf33868f0fed6cab013fe5231e8485d15e20",
+                "url": "https://api.github.com/repos/symfony/maker-bundle/zipball/26643943fe19b5b47d620744907f09d1d6b3f06f",
+                "reference": "26643943fe19b5b47d620744907f09d1d6b3f06f",
                 "shasum": ""
             },
             "require": {
@@ -8458,7 +8427,7 @@
                 "scaffold",
                 "scaffolding"
             ],
-            "time": "2018-08-30T01:08:06+00:00"
+            "time": "2018-10-13T19:56:32+00:00"
         },
         {
             "name": "symfony/panther",

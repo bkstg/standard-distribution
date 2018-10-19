@@ -2,9 +2,9 @@ sonata_media:
     default_context: default
     db_driver: doctrine_orm
     class:
-        media: Bkstg\MediaBundle\Entity\Media
-        gallery: Bkstg\MediaBundle\Entity\Gallery
-        gallery_has_media: Bkstg\MediaBundle\Entity\GalleryHasMedia
+        media: Bkstg\CoreBundle\Entity\Media
+        gallery: Bkstg\CoreBundle\Entity\Gallery
+        gallery_has_media: Bkstg\CoreBundle\Entity\GalleryHasMedia
     providers:
         image:
             resizer: sonata.media.resizer.simple

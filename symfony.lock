@@ -11,9 +11,6 @@
     "bkstg/fos-user-bundle": {
         "version": "2.0.x-dev"
     },
-    "bkstg/media-bundle": {
-        "version": "2.0.x-dev"
-    },
     "bkstg/notice-board-bundle": {
         "version": "2.0.x-dev"
     },
