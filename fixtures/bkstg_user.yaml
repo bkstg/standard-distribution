@@ -1,7 +1,0 @@
-Bkstg\FOSUserBundle\Entity\User:
-  bkstg_user{1..10}:
-    username: <userName()>
-    email: <safeEmail()>
-    plainPassword: <password()>
-    first_name: <firstName()>
-    last_name: <lastName()>
