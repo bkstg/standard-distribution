@@ -10,3 +10,4 @@
 ###< symfony/web-server-bundle ###
 
 /composer.local.json
+/public/vendor/

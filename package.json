@@ -1,0 +1,13 @@
+{
+  "license": "MIT",
+  "name": "bkstg-standard-distribution",
+  "description": "",
+  "author": "Luke Bainbridge <luke@forestcitylabs.ca>",
+  "dependencies": {
+    "@composer-asset/bkstg--core-bundle": "file:./vendor/foxy/composer-asset/bkstg/core-bundle",
+    "@fortawesome/fontawesome-free": "^5.7",
+    "bootstrap": "^4.2",
+    "jquery": "^3.3",
+    "popper.js": "^1.14"
+  }
+}

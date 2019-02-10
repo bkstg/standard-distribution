@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "fef65c895934e9d245fc5b12520d6643",
+    "content-hash": "35b002fdba145d3ae288cc63545ee755",
     "packages": [
         {
             "name": "behat/transliterator",
@@ -56,13 +56,7 @@
             "source": {
                 "type": "git",
                 "url": "/Volumes/Luke/Development/PHP/bkstg/core-bundle",
-                "reference": "730cbda7d6f39f205ee492cb58506e5dfd3a406d"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://gitlab.com/api/v4/projects/forestcitylabs%2Fbkstg%2Fcore-bundle/repository/archive.zip?sha=730cbda7d6f39f205ee492cb58506e5dfd3a406d",
-                "reference": "730cbda7d6f39f205ee492cb58506e5dfd3a406d",
-                "shasum": ""
+                "reference": "bf99967ff7cb0ac5a6c3f309cb7377de9ee95287"
             },
             "require": {
                 "doctrine/doctrine-bundle": "^1.9",
@@ -84,6 +78,7 @@
             },
             "require-dev": {
                 "aws/aws-sdk-php": "^3.69",
+                "foxy/foxy": "^1.0",
                 "kint-php/kint": "^3.0",
                 "phpunit/phpunit": "^7.4"
             },
@@ -101,7 +96,6 @@
                     "/Tests/"
                 ]
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -112,7 +106,7 @@
                 }
             ],
             "description": "Provides the core backstage functionality and requirements.",
-            "time": "2018-10-24T01:04:18+00:00"
+            "time": "2019-02-10T20:37:55+00:00"
         },
         {
             "name": "bkstg/fos-user-bundle",
@@ -1649,6 +1643,66 @@
                 "html"
             ],
             "time": "2018-02-23T01:58:20+00:00"
+        },
+        {
+            "name": "foxy/foxy",
+            "version": "v1.0.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/fxpio/foxy.git",
+                "reference": "5b7cb97abc07fbff4eec87abd941be5c6a532c54"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/fxpio/foxy/zipball/5b7cb97abc07fbff4eec87abd941be5c6a532c54",
+                "reference": "5b7cb97abc07fbff4eec87abd941be5c6a532c54",
+                "shasum": ""
+            },
+            "require": {
+                "composer-plugin-api": "^1.1",
+                "php": ">=5.3.3"
+            },
+            "require-dev": {
+                "composer/composer": "^1.5.0"
+            },
+            "type": "composer-plugin",
+            "extra": {
+                "class": "Foxy\\Foxy",
+                "branch-alias": {
+                    "dev-master": "1.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Foxy\\": ""
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "François Pluchino",
+                    "email": "francois.pluchino@gmail.com"
+                }
+            ],
+            "description": "Fast, reliable, and secure NPM/Yarn bridge for Composer",
+            "homepage": "https://github.com/fxpio/foxy",
+            "keywords": [
+                "Bridge",
+                "asset",
+                "composer",
+                "dependency manager",
+                "nodejs",
+                "npm",
+                "package",
+                "yarn"
+            ],
+            "time": "2018-09-07T06:51:12+00:00"
         },
         {
             "name": "friendsofsymfony/ckeditor-bundle",
