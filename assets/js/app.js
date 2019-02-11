@@ -4,5 +4,5 @@
 import 'bootstrap';
 
 // Bkstg assets.
-import '@BkstgScheduleBundle/Resources/assets/js/all.js';
-import '@BkstgCoreBundle/Resources/assets/js/all.js';
+import '@bkstg/core-bundle/Resources/assets/js/all.js';
+import '@bkstg/schedule-bundle/Resources/assets/js/all.js';

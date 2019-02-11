@@ -1,13 +1,23 @@
 {
   "license": "MIT",
-  "name": "bkstg-standard-distribution",
+  "name": "@bkstg/standard-distribution",
   "description": "",
   "author": "Luke Bainbridge <luke@forestcitylabs.ca>",
+  "private": true,
   "dependencies": {
-    "@composer-asset/bkstg--core-bundle": "file:./vendor/foxy/composer-asset/bkstg/core-bundle",
-    "@fortawesome/fontawesome-free": "^5.7",
     "bootstrap": "^4.2",
     "jquery": "^3.3",
-    "popper.js": "^1.14"
+    "popper.js": "^1.14",
+    "@fortawesome/fontawesome-free": "^5.7",
+    "@bkstg/core-bundle": "file:./vendor/bkstg/core-bundle",
+    "@bkstg/notice-board-bundle": "file:./vendor/bkstg/notice-board-bundle",
+    "@bkstg/schedule-bundle": "file:./vendor/bkstg/schedule-bundle"
+  },
+  "devDependencies": {
+    "@symfony/webpack-encore": "^0.20.0",
+    "babel-preset-env": "^1.7.0",
+    "node-sass": "^4.9.3",
+    "sass-loader": "^6.0.6",
+    "webpack-livereload-plugin": "^1.0.0"
   }
 }

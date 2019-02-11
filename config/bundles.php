@@ -34,4 +34,5 @@ return [
     Exercise\HTMLPurifierBundle\ExerciseHTMLPurifierBundle::class => ['all' => true],
     Spy\TimelineBundle\SpyTimelineBundle::class => ['all' => true],
     Bkstg\TimelineBundle\BkstgTimelineBundle::class => ['all' => true],
+    Symfony\WebpackEncoreBundle\WebpackEncoreBundle::class => ['all' => true],
 ];
