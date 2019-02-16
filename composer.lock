@@ -164,7 +164,7 @@
             "source": {
                 "type": "git",
                 "url": "/Volumes/Luke/Development/PHP/bkstg/notice-board-bundle",
-                "reference": "79e42c59dcd6e89b48bce2f39358cd8765d75920"
+                "reference": "934aff2b312e119c3a8e5e0547e1fd4d5c13985b"
             },
             "require": {
                 "bkstg/core-bundle": "2.0.x-dev",
@@ -194,7 +194,7 @@
                 }
             ],
             "description": "Provides the backstage notice board.",
-            "time": "2019-02-11T17:41:13+00:00"
+            "time": "2019-02-16T17:35:37+00:00"
         },
         {
             "name": "bkstg/notification-bundle",
@@ -295,7 +295,7 @@
             "source": {
                 "type": "git",
                 "url": "/Volumes/Luke/Development/PHP/bkstg/schedule-bundle",
-                "reference": "d3552dbf250092436faab25dbc62d3671a771f52"
+                "reference": "a38d1ad40fdd93721c698a0583af713316f687e6"
             },
             "require": {
                 "bkstg/core-bundle": "2.0.x-dev",
@@ -326,7 +326,7 @@
                 }
             ],
             "description": "Provides the backstage schedule.",
-            "time": "2019-02-11T17:41:35+00:00"
+            "time": "2019-02-16T17:49:09+00:00"
         },
         {
             "name": "bkstg/timeline-bundle",
