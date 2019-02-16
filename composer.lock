@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "5e56c110b065dcc6383c2b0bd0034c0c",
+    "content-hash": "35b002fdba145d3ae288cc63545ee755",
     "packages": [
         {
             "name": "behat/transliterator",
@@ -55,14 +55,8 @@
             "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "https://gitlab.com/forestcitylabs/bkstg/core-bundle.git",
-                "reference": "730cbda7d6f39f205ee492cb58506e5dfd3a406d"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://gitlab.com/api/v4/projects/forestcitylabs%2Fbkstg%2Fcore-bundle/repository/archive.zip?sha=730cbda7d6f39f205ee492cb58506e5dfd3a406d",
-                "reference": "730cbda7d6f39f205ee492cb58506e5dfd3a406d",
-                "shasum": ""
+                "url": "/Volumes/Luke/Development/PHP/bkstg/core-bundle",
+                "reference": "8d531d6338dbcbb5c4148a7cbf61232d36a54e0e"
             },
             "require": {
                 "doctrine/doctrine-bundle": "^1.9",
@@ -84,6 +78,7 @@
             },
             "require-dev": {
                 "aws/aws-sdk-php": "^3.69",
+                "foxy/foxy": "^1.0",
                 "kint-php/kint": "^3.0",
                 "phpunit/phpunit": "^7.4"
             },
@@ -101,7 +96,6 @@
                     "/Tests/"
                 ]
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -112,14 +106,14 @@
                 }
             ],
             "description": "Provides the core backstage functionality and requirements.",
-            "time": "2018-10-24T01:04:18+00:00"
+            "time": "2019-02-16T16:46:31+00:00"
         },
         {
             "name": "bkstg/fos-user-bundle",
             "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "https://gitlab.com/forestcitylabs/bkstg/fos-user-bundle.git",
+                "url": "/Volumes/Luke/Development/PHP/bkstg/fos-user-bundle",
                 "reference": "6aa6c70d9040e036ba4b1922b22cf0a818f100bf"
             },
             "dist": {
@@ -169,14 +163,8 @@
             "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "https://gitlab.com/forestcitylabs/bkstg/notice-board-bundle.git",
-                "reference": "ed34c13f81edc2fd18cde4055e776b32582a1d4a"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://gitlab.com/api/v4/projects/forestcitylabs%2Fbkstg%2Fnotice-board-bundle/repository/archive.zip?sha=ed34c13f81edc2fd18cde4055e776b32582a1d4a",
-                "reference": "ed34c13f81edc2fd18cde4055e776b32582a1d4a",
-                "shasum": ""
+                "url": "/Volumes/Luke/Development/PHP/bkstg/notice-board-bundle",
+                "reference": "79e42c59dcd6e89b48bce2f39358cd8765d75920"
             },
             "require": {
                 "bkstg/core-bundle": "2.0.x-dev",
@@ -196,7 +184,6 @@
                     "Bkstg\\NoticeBoardBundle\\": ""
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -207,14 +194,14 @@
                 }
             ],
             "description": "Provides the backstage notice board.",
-            "time": "2018-10-24T10:57:47+00:00"
+            "time": "2019-02-11T17:41:13+00:00"
         },
         {
             "name": "bkstg/notification-bundle",
             "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "https://gitlab.com/forestcitylabs/bkstg/notification-bundle.git",
+                "url": "/Volumes/Luke/Development/PHP/bkstg/notification-bundle",
                 "reference": "0bd8c74d0b47693631803548a756b7c683acd266"
             },
             "dist": {
@@ -262,7 +249,7 @@
             "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "https://gitlab.com/forestcitylabs/bkstg/resource-bundle.git",
+                "url": "/Volumes/Luke/Development/PHP/bkstg/resource-bundle",
                 "reference": "1ce468de9b514074cbeb87002f62c76d7e9b5fdc"
             },
             "dist": {
@@ -307,20 +294,15 @@
             "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "https://gitlab.com/forestcitylabs/bkstg/schedule-bundle.git",
-                "reference": "25c190c0cce0e2917ebe7418f4e7e45e2b360d13"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://gitlab.com/api/v4/projects/forestcitylabs%2Fbkstg%2Fschedule-bundle/repository/archive.zip?sha=25c190c0cce0e2917ebe7418f4e7e45e2b360d13",
-                "reference": "25c190c0cce0e2917ebe7418f4e7e45e2b360d13",
-                "shasum": ""
+                "url": "/Volumes/Luke/Development/PHP/bkstg/schedule-bundle",
+                "reference": "d3552dbf250092436faab25dbc62d3671a771f52"
             },
             "require": {
                 "bkstg/core-bundle": "2.0.x-dev",
                 "symfony/framework-bundle": "^2.8||^4.0"
             },
             "require-dev": {
+                "foxy/foxy": "^1.0",
                 "phpunit/phpunit": "^7.4"
             },
             "type": "symfony-bundle",
@@ -334,7 +316,6 @@
                     "Bkstg\\ScheduleBundle\\": ""
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -345,14 +326,14 @@
                 }
             ],
             "description": "Provides the backstage schedule.",
-            "time": "2018-10-26T02:21:15+00:00"
+            "time": "2019-02-11T17:41:35+00:00"
         },
         {
             "name": "bkstg/timeline-bundle",
             "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "https://gitlab.com/forestcitylabs/bkstg/timeline-bundle.git",
+                "url": "/Volumes/Luke/Development/PHP/bkstg/timeline-bundle",
                 "reference": "c9571e3f457f00524cfe2f1e1e93b4a46f0377cb"
             },
             "dist": {
@@ -1649,6 +1630,66 @@
                 "html"
             ],
             "time": "2018-02-23T01:58:20+00:00"
+        },
+        {
+            "name": "foxy/foxy",
+            "version": "v1.0.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/fxpio/foxy.git",
+                "reference": "5b7cb97abc07fbff4eec87abd941be5c6a532c54"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/fxpio/foxy/zipball/5b7cb97abc07fbff4eec87abd941be5c6a532c54",
+                "reference": "5b7cb97abc07fbff4eec87abd941be5c6a532c54",
+                "shasum": ""
+            },
+            "require": {
+                "composer-plugin-api": "^1.1",
+                "php": ">=5.3.3"
+            },
+            "require-dev": {
+                "composer/composer": "^1.5.0"
+            },
+            "type": "composer-plugin",
+            "extra": {
+                "class": "Foxy\\Foxy",
+                "branch-alias": {
+                    "dev-master": "1.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Foxy\\": ""
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "François Pluchino",
+                    "email": "francois.pluchino@gmail.com"
+                }
+            ],
+            "description": "Fast, reliable, and secure NPM/Yarn bridge for Composer",
+            "homepage": "https://github.com/fxpio/foxy",
+            "keywords": [
+                "Bridge",
+                "asset",
+                "composer",
+                "dependency manager",
+                "nodejs",
+                "npm",
+                "package",
+                "yarn"
+            ],
+            "time": "2018-09-07T06:51:12+00:00"
         },
         {
             "name": "friendsofsymfony/ckeditor-bundle",
@@ -3508,16 +3549,16 @@
         },
         {
             "name": "sonata-project/core-bundle",
-            "version": "3.15.1",
+            "version": "3.16.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sonata-project/SonataCoreBundle.git",
-                "reference": "30f5d1201aab91c493b2f15d91f6514fe4ad2daf"
+                "reference": "5264f367fc25fc40657f6b04fadb82ec05bcaa11"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sonata-project/SonataCoreBundle/zipball/30f5d1201aab91c493b2f15d91f6514fe4ad2daf",
-                "reference": "30f5d1201aab91c493b2f15d91f6514fe4ad2daf",
+                "url": "https://api.github.com/repos/sonata-project/SonataCoreBundle/zipball/5264f367fc25fc40657f6b04fadb82ec05bcaa11",
+                "reference": "5264f367fc25fc40657f6b04fadb82ec05bcaa11",
                 "shasum": ""
             },
             "require": {
@@ -3588,7 +3629,7 @@
             "keywords": [
                 "sonata"
             ],
-            "time": "2019-01-26T22:34:20+00:00"
+            "time": "2019-02-14T21:07:19+00:00"
         },
         {
             "name": "sonata-project/datagrid-bundle",
@@ -6622,60 +6663,6 @@
                 "serialize"
             ],
             "time": "2019-01-16T20:35:37+00:00"
-        },
-        {
-            "name": "symfony/webpack-encore-bundle",
-            "version": "v1.1.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/symfony/webpack-encore-bundle.git",
-                "reference": "9c89795a4577c522101206a1a88272660735257c"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/symfony/webpack-encore-bundle/zipball/9c89795a4577c522101206a1a88272660735257c",
-                "reference": "9c89795a4577c522101206a1a88272660735257c",
-                "shasum": ""
-            },
-            "require": {
-                "php": "^7.1.3",
-                "symfony/asset": "^3.4 || ^4.0",
-                "symfony/config": "^3.4 || ^4.0",
-                "symfony/contracts": "^1.0",
-                "symfony/dependency-injection": "^3.4 || ^4.0",
-                "symfony/http-kernel": "^3.4 || ^4.0"
-            },
-            "require-dev": {
-                "friendsofphp/php-cs-fixer": "^2.14",
-                "symfony/framework-bundle": "^3.4 || ^4.0",
-                "symfony/phpunit-bridge": "^3.4 || ^4.1",
-                "symfony/twig-bundle": "^3.4 || ^4.0",
-                "twig/twig": "^1.35 || ^2.0"
-            },
-            "type": "symfony-bundle",
-            "extra": {
-                "thanks": {
-                    "name": "symfony/webpack-encore",
-                    "url": "https://github.com/symfony/webpack-encore"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Symfony\\WebpackEncoreBundle\\": "src"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Symfony Community",
-                    "homepage": "https://symfony.com/contributors"
-                }
-            ],
-            "description": "Integration with your Symfony app & Webpack Encore!",
-            "time": "2019-01-17T02:29:30+00:00"
         },
         {
             "name": "symfony/yaml",

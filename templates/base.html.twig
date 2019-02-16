@@ -4,16 +4,35 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    {% block stylesheets %}
-      <link rel="stylesheet" href="{{ asset('build/css/app.css') }}">
-    {% endblock %}
+    <!-- Vendor CSS -->
+    <link rel="stylesheet" href="{{ asset('vendor/bootstrap/dist/css/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('vendor/@fortawesome/fontawesome-free/css/all.min.css') }}"></script>
+
+    <!-- Additional CSS -->
+    {% block stylesheets %}{% endblock %}
 
     <title>{{ page_title|default('') }} | {{ 'site.name'|trans }}</title>
   </head>
   <body{% for attr,val in body_attr|default([]) %} {{attr}}="{{val}}"{% endfor %}>
     {% block body %}{% endblock %}
-    {% block javascripts %}
-      <script src="{{ asset('build/js/app.js') }}"></script>
-    {% endblock %}
+
+    <!-- Vendor JS -->
+    <script src="{{ asset('vendor/jquery/dist/jquery.min.js') }}"></script>
+    <script src="{{ asset('vendor/jquery-once/jquery.once.min.js') }}"></script>
+    <script src="{{ asset('vendor/popper.js/dist/umd/popper.min.js') }}"></script>
+    <script src="{{ asset('vendor/bootstrap/dist/js/bootstrap.min.js') }}"></script>
+
+    <!-- Framework JS -->
+    <script src="{{ asset('js/globals.js') }}"></script>
+
+    <!-- Additional JS -->
+    {% block javascripts %}{% endblock %}
+
+    <script type="text/javascript">
+      // Run attach now that all JS is included.
+      $(document).ready(function () {
+        Globals.attach();
+      });
+    </script>
   </body>
 </html>

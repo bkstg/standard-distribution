@@ -9,10 +9,20 @@
     jquery-once "^2.2"
     list.js "^1.5"
 
+"@composer-asset/bkstg--schedule-bundle@file:./vendor/foxy/composer-asset/bkstg/schedule-bundle":
+  version "2.0.0"
+  dependencies:
+    bootstrap-calendar "^0.2.4"
+
 "@fortawesome/fontawesome-free@^5.7":
   version "5.7.1"
   resolved "https://registry.yarnpkg.com/@fortawesome/fontawesome-free/-/fontawesome-free-5.7.1.tgz#e4bdc6fd2a7b5a41d5b599bcb62cf22c78f7f535"
   integrity sha512-gukWJ7Mwf0WXQbkcwcm5zi8+H8aT5MMnphf5hpydOw898H1ibgm2cyejHgk6Km/FTvrPp5ppUHLrlFwt0QxsQw==
+
+bootstrap-calendar@^0.2.4:
+  version "0.2.4"
+  resolved "https://registry.yarnpkg.com/bootstrap-calendar/-/bootstrap-calendar-0.2.4.tgz#4af891a0f20fdf03a86f2ebfbf867f3dc92cee6e"
+  integrity sha1-SviRoPIP3wOoby6/v4Z/Pcks7m4=
 
 bootstrap@^4.2:
   version "4.2.1"

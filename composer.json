@@ -12,12 +12,12 @@
         "bkstg/resource-bundle": "2.0.x-dev",
         "bkstg/schedule-bundle": "2.0.x-dev",
         "bkstg/timeline-bundle": "2.0.x-dev",
+        "foxy/foxy": "^1.0",
         "symfony/console": "^4.0",
         "symfony/flex": "^1.0",
         "symfony/framework-bundle": "^4.0",
         "symfony/monolog-bundle": "^3.3",
         "symfony/swiftmailer-bundle": "^3.2",
-        "symfony/webpack-encore-bundle": "^1.1",
         "symfony/yaml": "^4.0"
     },
     "require-dev": {
@@ -33,7 +33,11 @@
         "preferred-install": {
             "*": "dist"
         },
-        "sort-packages": true
+        "sort-packages": true,
+        "foxy": {
+            "manager": "yarn",
+            "manager-options": "--production=true --modules-folder=./public/vendor"
+        }
     },
     "autoload": {
         "psr-4": {
