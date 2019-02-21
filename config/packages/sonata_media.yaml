@@ -7,7 +7,7 @@ sonata_media:
         gallery_has_media: Bkstg\CoreBundle\Entity\GalleryHasMedia
     providers:
         image:
-            resizer: sonata.media.resizer.simple
+            resizer: sonata.media.resizer.square
     contexts:
         default:
             providers:
