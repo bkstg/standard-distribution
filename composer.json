@@ -1,5 +1,7 @@
 {
-    "type": "The Backstage",
+    "name": "bkstg/standard-distribution",
+    "description": "The standard distribution of the backstage application.",
+    "type": "project",
     "license": "MIT",
     "minimum-stability": "dev",
     "prefer-stable": true,
