@@ -11,3 +11,5 @@
 
 /composer.local.json
 /public/vendor/
+/composer.lock
+/symfony.lock
