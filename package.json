@@ -9,7 +9,7 @@
     "@composer-asset/bkstg--schedule-bundle": "file:./vendor/foxy/composer-asset/bkstg/schedule-bundle",
     "@fortawesome/fontawesome-free": "^5.7",
     "bootstrap": "^4.2",
-    "jquery": "^3.3",
+    "jquery": "^3.5",
     "jquery-once": "^2.2",
     "popper.js": "^1.14"
   }
